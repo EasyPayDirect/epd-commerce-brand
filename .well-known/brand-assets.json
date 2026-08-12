@@ -1,0 +1,159 @@
+{
+  "$schema": "https://json.schemastore.org/brand-assets",
+  "brand": "EPD Commerce",
+  "brand_type": "product",
+  "parent_brand": "Easy Pay Direct",
+  "version": "2.0",
+  "updated": "2026-08-12",
+  "repository": "https://github.com/EasyPayDirect/epd-commerce-brand",
+  "site": "https://epd.com",
+
+  "identity": {
+    "one_line": "The commerce platform that thinks with you. Powered by Easy Pay Direct.",
+    "pillars": ["Create", "Analyze", "React", "Transact"],
+    "positioning": "Agentic inside and out. Inside, AI is built in where it helps most. Outside, a hosted MCP server and open-source Agent Skills let Claude, Cursor, and other AI agents work with your catalog directly.",
+    "voice": "Confident, plainspoken, grounded. Short declarative sentences. Talk to \"you\" and \"your business.\" Never hype, never hedging, never exclamation points."
+  },
+
+  "naming_rules": {
+    "product_name": "EPD Commerce",
+    "wrong_spellings": ["EPD commerce", "Epd Commerce", "EPDC (customer-facing)", "epd-commerce"],
+    "parent_brand_name": "Easy Pay Direct",
+    "never_confuse": "EPD Commerce and Easy Pay Direct are separate brands. Never use \"EPD\" as a standalone shorthand for Easy Pay Direct.",
+    "pillar_capitalization": "Create, Analyze, React, Transact are always capitalized.",
+    "agentic_commerce": "\"agentic commerce\" is lowercase in running text. Only capitalize if it starts a sentence."
+  },
+
+  "logos": {
+    "horizontal_primary": {
+      "role": "Default lockup. Use everywhere unless space forces the stacked version.",
+      "svg": "assets/logos/epdc-horizontal.svg",
+      "png_on_light": "assets/logos/epdc-horizontal-navy-on-light.png",
+      "png_on_navy": "assets/logos/epdc-horizontal-on-navy.png",
+      "min_width_px": 120,
+      "min_width_print_in": 1.0
+    },
+    "stacked_secondary": {
+      "role": "For square or vertical spaces. App icons, avatars, merch, social profile.",
+      "png": "assets/logos/epdc-stacked.png",
+      "min_width_px": 80,
+      "min_width_print_in": 0.75
+    }
+  },
+
+  "motif": {
+    "hero_diamonds": {
+      "role": "Decorative background motif. Cascading diamond outlines. Used on cover pages, section dividers, hero backgrounds. Reduce opacity to 40-60% when placing over content.",
+      "svg": "assets/motif/hero-diamonds.svg",
+      "png": "assets/motif/hero-diamonds.png"
+    }
+  },
+
+  "color": {
+    "backgrounds": {
+      "white": "#FFFFFF",
+      "pale": "#EBEDF6",
+      "tint": "#F5F7FC"
+    },
+    "text": {
+      "heading": "#0E1422",
+      "body": "#4A5878",
+      "muted": "#64748B",
+      "on_dark": "#EBEDF6"
+    },
+    "primary": {
+      "blue_700": "#0056BB",
+      "blue_600_cta": "#006EE8"
+    },
+    "hero_gradient": {
+      "stops": [
+        { "at": "0%",  "color": "#003C7E" },
+        { "at": "38%", "color": "#003C7E" },
+        { "at": "75%", "color": "#6A9BD1" },
+        { "at": "100%", "color": "#FFFFFF" }
+      ],
+      "direction": "to bottom",
+      "css": "linear-gradient(to bottom, #003c7e 0%, #003c7e 38%, #6a9bd1 75%, #ffffff 100%)"
+    },
+    "pillar_accents": {
+      "create":   { "hex": "#0056BB", "bg": "#E7EEFB" },
+      "analyze":  { "hex": "#7C3AED", "bg": "#F1EBFB" },
+      "react":    { "hex": "#EA580C", "bg": "#FDEDE3" },
+      "transact": { "hex": "#0E9F5A", "bg": "#E5F6ED" }
+    },
+    "pillar_accent_rules": "Pillar accents are used only for pill labels, eyebrows, and thin accents. Never as large surface fills.",
+    "semantic": {
+      "green_success": "#0E9F5A",
+      "red_error": "#B91C1C"
+    },
+    "green_rule": "Green is semantic only. It appears inside the product to signal positive movement or success states. Never on marketing pages, ads, emails, or any brand surface as a general accent."
+  },
+
+  "typography": {
+    "display_body": {
+      "family": "General Sans",
+      "fallback": "DM Sans, Inter, system-ui, sans-serif",
+      "source": "https://fontshare.com/fonts/general-sans"
+    },
+    "mono": {
+      "family": "DM Mono",
+      "fallback": "JetBrains Mono, Menlo, monospace",
+      "source": "https://fonts.google.com/specimen/DM+Mono"
+    },
+    "usage": "General Sans for headings and body. DM Mono for eyebrows, technical labels, and metadata.",
+    "case": "Sentence case in headlines. Never Title Case."
+  },
+
+  "taglines": {
+    "primary": "Most AI helps you write faster. EPD Commerce helps you run better.",
+    "variants": [
+      "The commerce platform that thinks with you.",
+      "Agentic inside and out.",
+      "One platform. Four things it does well."
+    ],
+    "contrast_framing": [
+      "Most AI helps you write faster. EPD Commerce helps you run better.",
+      "Most platforms tell you a payment failed. EPD Commerce does something about it."
+    ]
+  },
+
+  "trust_anchors": {
+    "built_on_easy_pay_direct_rail": [
+      { "value": "$12B+", "label": "PROCESSED" },
+      { "value": "100k+", "label": "BUSINESSES HELPED" },
+      { "value": "$48M+", "label": "REVENUE RECOVERED" },
+      { "value": "10+", "label": "YEARS PROCESSING" }
+    ],
+    "epd_commerce_at_launch": [
+      { "value": "5", "label": "RECOVERY TEMPLATES" },
+      { "value": "15", "label": "NOTIFICATION TRIGGERS" },
+      { "value": "43", "label": "USER PERMISSIONS" },
+      { "value": "7", "label": "USER ROLES" }
+    ]
+  },
+
+  "do_and_dont": {
+    "do": [
+      "Use sentence case in headlines.",
+      "Open features with a second-person imperative sentence fragment: \"Your revenue command center.\"",
+      "Title product features as proper nouns with periods: \"Revenue Recovery.\" \"Order Rescue.\"",
+      "Ground claims in specifics: 100k+ businesses, $12B+ processed, 5 recovery templates, 15 notification triggers.",
+      "Use commas, periods, or parentheses for pauses.",
+      "Spell the pillars exactly: Create, Analyze, React, Transact.",
+      "Use \"agentic commerce\" lowercase in running text.",
+      "Say what AI actually does: analyzes transactions, recovers failed payments.",
+      "Attribute agentic behavior to features. \"Order Rescue reaches customers.\" Not \"AI reaches customers.\""
+    ],
+    "dont": [
+      "Title Case Headlines That Feel Corporate.",
+      "Open with abstract nouns: \"A tool to manage revenue.\" \"Solutions for your catalog.\"",
+      "Lowercase feature names in body copy, or hedge them with generic words like \"our recovery system.\"",
+      "Use hype words: revolutionary, game-changing, supercharge.",
+      "Use em dashes. They are off brand.",
+      "Rename pillars or add new ones.",
+      "Capitalize \"agentic commerce\" mid-sentence.",
+      "Say \"AI runs the mechanics of your business.\" Do not overclaim.",
+      "Attribute product actions to \"AI\" as if it is a person. Name the feature."
+    ]
+  }
+}
