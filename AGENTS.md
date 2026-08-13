@@ -80,6 +80,25 @@ EPD Commerce at launch: 5 recovery templates, 15 notification triggers, 43 user 
 3. Read the pillar file for context on where the feature fits.
 4. Follow the voice guide in `brand-guidelines/06-voice-and-copy.md`.
 
+## Feature screenshots (blog body images)
+
+Every shipped feature has real product screenshots in `assets/epd-commerce-features/<slug>/`. Use them in blog bodies. Never generate synthetic screenshots.
+
+1. Read the feature's `images:` frontmatter block from `messaging-kit/features/<slug>.md`. If there is no `images:` block, the feature has no approved screenshots yet and the blog runs text-only.
+2. Use `images.hero` for the featured image or the top of the body. Use `images.gallery` for placements throughout the body.
+3. Follow the placement rule in each gallery entry:
+   - `after-what-it-does` → after the "What it is / What it does" section
+   - `after-how-it-works` → after the "How it works" section
+   - `after-how-to-talk` → near the end of the body
+   - `sidebar` → float right, 40% width, wrap paragraph text around it
+4. Respect orientation:
+   - `landscape` (aspect > 1.4:1) — full-width in body, centered, caption below in small italic muted text
+   - `portrait` (aspect < 0.8:1) — sidebar float, never full-width
+   - `square` — centered, 60% width, no text wrap
+5. Every image gets alt text from the manifest. Never blank.
+6. Cap: 1 hero + max 3 body images per blog. Beyond that the article turns into a slideshow. If the manifest has more, pick the first 3 gallery entries in order.
+7. Distribute evenly. Never stack images at the top or the bottom. Never place an image inside the intro paragraph.
+
 ## Common mistakes to avoid
 
 - Writing "EPD" alone. Always spell out "EPD Commerce" or "Easy Pay Direct."
