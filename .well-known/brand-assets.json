@@ -3,157 +3,390 @@
   "brand": "EPD Commerce",
   "brand_type": "product",
   "parent_brand": "Easy Pay Direct",
-  "version": "2.0",
-  "updated": "2026-08-12",
+  "legal": "EPD Commerce is a DBA of Easy Pay Direct LLC.",
+  "version": "3.0",
+  "updated": "2026-10-15",
   "repository": "https://github.com/EasyPayDirect/epd-commerce-brand",
   "site": "https://epd.com",
-
+  "read_first": {
+    "names": "data/names.json",
+    "claims": "data/claims.json",
+    "templates": "templates/",
+    "payment_options": "messaging-kit/payment-options.md",
+    "capabilities": "messaging-kit/capabilities/",
+    "features": "messaging-kit/features/",
+    "guidelines": "brand-guidelines/"
+  },
   "identity": {
-    "one_line": "The commerce platform that thinks with you. Powered by Easy Pay Direct.",
-    "pillars": ["Create", "Analyze", "React", "Transact"],
-    "positioning": "Agentic inside and out. Inside, AI is built in where it helps most. Outside, a hosted MCP server and open-source Agent Skills let Claude, Cursor, and other AI agents work with your catalog directly.",
-    "voice": "Confident, plainspoken, grounded. Short declarative sentences. Talk to \"you\" and \"your business.\" Never hype, never hedging, never exclamation points."
-  },
-
-  "naming_rules": {
-    "product_name": "EPD Commerce",
-    "wrong_spellings": ["EPD commerce", "Epd Commerce", "EPDC (customer-facing)", "epd-commerce"],
-    "parent_brand_name": "Easy Pay Direct",
-    "never_confuse": "EPD Commerce and Easy Pay Direct are separate brands. Never use \"EPD\" as a standalone shorthand for Easy Pay Direct.",
-    "pillar_capitalization": "Create, Analyze, React, Transact are always capitalized.",
-    "agentic_commerce": "\"agentic commerce\" is lowercase in running text. Only capitalize if it starts a sentence."
-  },
-
-  "logos": {
-    "horizontal_primary": {
-      "role": "Default lockup. Use everywhere unless space forces the stacked version.",
-      "svg": "assets/logos/epdc-horizontal.svg",
-      "png_on_light": "assets/logos/epdc-horizontal-navy-on-light.png",
-      "png_on_navy": "assets/logos/epdc-horizontal-on-navy.png",
-      "min_width_px": 120,
-      "min_width_print_in": 1.0
-    },
-    "stacked_secondary": {
-      "role": "For square or vertical spaces. App icons, avatars, merch, social profile.",
-      "png": "assets/logos/epdc-stacked.png",
-      "min_width_px": 80,
-      "min_width_print_in": 0.75
-    }
-  },
-
-  "motif": {
-    "hero_diamonds": {
-      "role": "Decorative background motif. Cascading diamond outlines. Used on cover pages, section dividers, hero backgrounds. Reduce opacity to 40-60% when placing over content.",
-      "svg": "assets/motif/hero-diamonds.svg",
-      "png": "assets/motif/hero-diamonds.png"
-    }
-  },
-
-  "color": {
-    "backgrounds": {
-      "white": "#FFFFFF",
-      "pale": "#EBEDF6",
-      "tint": "#F5F7FC"
-    },
-    "text": {
-      "heading": "#0E1422",
-      "body": "#4A5878",
-      "muted": "#64748B",
-      "on_dark": "#EBEDF6"
-    },
-    "primary": {
-      "blue_700": "#0056BB",
-      "blue_600_cta": "#006EE8"
-    },
-    "hero_gradient": {
-      "stops": [
-        { "at": "0%",  "color": "#003C7E" },
-        { "at": "38%", "color": "#003C7E" },
-        { "at": "75%", "color": "#6A9BD1" },
-        { "at": "100%", "color": "#FFFFFF" }
-      ],
-      "direction": "to bottom",
-      "css": "linear-gradient(to bottom, #003c7e 0%, #003c7e 38%, #6a9bd1 75%, #ffffff 100%)"
-    },
-    "pillar_accents": {
-      "create":   { "hex": "#0056BB", "bg": "#E7EEFB" },
-      "analyze":  { "hex": "#7C3AED", "bg": "#F1EBFB" },
-      "react":    { "hex": "#EA580C", "bg": "#FDEDE3" },
-      "transact": { "hex": "#0E9F5A", "bg": "#E5F6ED" }
-    },
-    "pillar_accent_rules": "Pillar accents are used only for pill labels, eyebrows, and thin accents. Never as large surface fills.",
-    "semantic": {
-      "green_success": "#0E9F5A",
-      "red_error": "#B91C1C"
-    },
-    "green_rule": "Green is semantic only. It appears inside the product to signal positive movement or success states. Never on marketing pages, ads, emails, or any brand surface as a general accent."
-  },
-
-  "typography": {
-    "display_body": {
-      "family": "General Sans",
-      "fallback": "DM Sans, Inter, system-ui, sans-serif",
-      "source": "https://fontshare.com/fonts/general-sans"
-    },
-    "mono": {
-      "family": "DM Mono",
-      "fallback": "JetBrains Mono, Menlo, monospace",
-      "source": "https://fonts.google.com/specimen/DM+Mono"
-    },
-    "usage": "General Sans for headings and body. DM Mono for eyebrows, technical labels, and metadata.",
-    "case": "Sentence case in headlines. Never Title Case."
-  },
-
-  "taglines": {
-    "primary": "Most AI helps you write faster. EPD Commerce helps you run better.",
-    "variants": [
-      "The commerce platform that thinks with you.",
-      "Agentic inside and out.",
-      "One platform. Four things it does well."
+    "primary_line": "Built to accept payments from humans and agents.",
+    "messaging_hierarchy": [
+      "Accept payments",
+      "Two processing options: Process Now and Easy Pay Direct",
+      "Tools built on top: Transact, React, Analyze, Create"
     ],
-    "contrast_framing": [
+    "ai_audience_lines": [
       "Most AI helps you write faster. EPD Commerce helps you run better.",
+      "Agentic inside and out."
+    ],
+    "ai_audience_rule": "Use AI-first lines only for AI-focused audiences. Lead with payments everywhere else.",
+    "supporting_lines": [
+      "Same platform. Same dashboard. Same catalog.",
+      "Change rails without changing how you operate.",
       "Most platforms tell you a payment failed. EPD Commerce does something about it."
+    ],
+    "capabilities": [
+      "Transact",
+      "React",
+      "Analyze",
+      "Create"
+    ],
+    "capabilities_rule": "Approved only with their explanation. See messaging-kit/capabilities/.",
+    "voice": "Confident, plainspoken, grounded. Short declarative sentences. Talk to you and your business. No hype, no hedging, no exclamation points, no em dashes."
+  },
+  "tokens": {
+    "color": {
+      "page": "#FFFFFF",
+      "pale": "#EBEDF6",
+      "tint": "#F5F7FC",
+      "border": "#E2E8F0",
+      "button_blue": "#00499A",
+      "link_blue": "#0056BB",
+      "link_hover": "#003C7E",
+      "sky_accent": "#8DCAFF",
+      "sky_eyebrow": "#87C5FF",
+      "text_on_light": {
+        "headline": "#0E1422",
+        "body": "#4A5878",
+        "muted": "#64748B"
+      },
+      "text_on_dark": {
+        "headline": "#FFFFFF",
+        "strong": "#EBEDF6",
+        "body": "#D1D8E7",
+        "muted": "#8FA0BF"
+      },
+      "semantic": {
+        "status_green": "#3DDC73",
+        "up_delta": "#0E9F5A",
+        "error": "#B91C1C"
+      },
+      "semantic_rule": "Green is for in-product status and diagrams only. Never a marketing accent."
+    },
+    "surfaces": {
+      "dark_gradient": "linear-gradient(100deg, #002B55 0%, #001D3B 55%, #000E20 100%)",
+      "dark_highlight": "radial-gradient(60% 80% at 78% 45%, rgba(40,120,220,.28), transparent 70%)",
+      "dark_panel_radius_px": 20,
+      "rule": "Dark sections are rounded panels on a white page. Never fade to white."
+    },
+    "shadow": {
+      "elevated": "0 24px 60px -24px rgba(0,30,80,.35), 0 6px 20px -10px rgba(0,30,80,.18)",
+      "card": "0 8px 24px -14px rgba(20,30,60,.18)",
+      "rule": "Selective: elevated cards, diagrams, screenshots, nav pill. Never on text or logos. No glows."
+    },
+    "radius_px": {
+      "button": 4,
+      "card": 16,
+      "panel": 20,
+      "screenshot": 12
+    },
+    "font": {
+      "sans": {
+        "family": "General Sans",
+        "fallback": "DM Sans, Inter, system-ui, sans-serif",
+        "source": "https://fontshare.com/fonts/general-sans"
+      },
+      "mono": {
+        "family": "DM Mono",
+        "fallback": "JetBrains Mono, Menlo, monospace",
+        "source": "https://fonts.google.com/specimen/DM+Mono"
+      }
+    }
+  },
+  "components": {
+    "hero_headline": {
+      "font": "General Sans",
+      "weight": 500,
+      "size_px": 38,
+      "size_tablet_px": 34,
+      "size_mobile_px": 30,
+      "line_height": 1.12,
+      "tracking": "-0.025em",
+      "color": "#FFFFFF"
+    },
+    "feature_headline_dark": {
+      "font": "General Sans",
+      "weight": 540,
+      "size_px": 60,
+      "line_height": 0.98,
+      "tracking": "-0.052em",
+      "color": "#FFFFFF",
+      "accent_line_color": "#8DCAFF"
+    },
+    "section_headline_light": {
+      "font": "General Sans",
+      "weight": 500,
+      "size_px": 40,
+      "tracking": "-1px",
+      "color": "#0E1422"
+    },
+    "body": {
+      "font": "General Sans",
+      "weight": 400,
+      "size_px": 16,
+      "line_height": 1.6
+    },
+    "eyebrow": {
+      "font": "DM Mono",
+      "weight": 500,
+      "size_px": [
+        12,
+        14
+      ],
+      "tracking": "0.12em to 0.16em",
+      "case": "uppercase",
+      "color_light": "#0056BB",
+      "color_dark": "#87C5FF"
+    },
+    "button_primary": {
+      "font": "DM Mono",
+      "weight": 500,
+      "size_px": 14,
+      "tracking": "0.42px",
+      "case": "uppercase",
+      "radius_px": 4,
+      "on_light": {
+        "fill": "#00499A",
+        "text": "#FFFFFF"
+      },
+      "on_dark": {
+        "fill": "#FFFFFF",
+        "text": "#00499A"
+      }
+    },
+    "button_secondary": {
+      "font": "DM Mono",
+      "weight": 500,
+      "size_px": 14,
+      "tracking": "0.42px",
+      "case": "uppercase",
+      "radius_px": 4,
+      "on_light": {
+        "fill": "transparent",
+        "border": "1px #00499A",
+        "text": "#00499A"
+      },
+      "on_dark": {
+        "fill": "transparent",
+        "border": "1px #FFFFFF",
+        "text": "#FFFFFF"
+      }
+    },
+    "link_cta": {
+      "font": "DM Mono",
+      "weight": 500,
+      "size_px": 14,
+      "tracking": "0.06em",
+      "case": "uppercase",
+      "color": "#0056BB",
+      "hover": "#003C7E",
+      "suffix": "→"
+    },
+    "nav": {
+      "style": "Dark navy pill with soft shadow. Outline CTA (GET ACCESS)."
+    }
+  },
+  "assets": {
+    "_partner_use_values": {
+      "approved": "Partners may use inside studio templates.",
+      "pending": "EPD Commerce use only until approved.",
+      "no": "Never in partner graphics."
+    },
+    "logos": [
+      {
+        "path": "assets/logos/epdc-horizontal-white.png",
+        "use": "Primary lockup on dark. Transparent.",
+        "backgrounds": [
+          "dark gradient",
+          "navy"
+        ],
+        "cropping": "Never crop.",
+        "partner_use": "approved"
+      },
+      {
+        "path": "assets/logos/epdc-horizontal-navy-on-light.png",
+        "use": "Primary lockup on light.",
+        "backgrounds": [
+          "white",
+          "pale",
+          "tint"
+        ],
+        "cropping": "Never crop.",
+        "partner_use": "approved"
+      },
+      {
+        "path": "assets/logos/epdc-horizontal-on-navy.png",
+        "use": "Lockup on a solid navy tile.",
+        "backgrounds": [
+          "any, as a tile"
+        ],
+        "cropping": "Never crop.",
+        "partner_use": "approved"
+      },
+      {
+        "path": "assets/logos/epdc-horizontal.svg",
+        "use": "Source vector for print and large sizes.",
+        "backgrounds": [
+          "dark"
+        ],
+        "cropping": "Never crop.",
+        "partner_use": "approved"
+      },
+      {
+        "path": "assets/logos/epdc-stacked.png",
+        "use": "Square or narrow vertical spaces.",
+        "backgrounds": [
+          "white",
+          "pale"
+        ],
+        "cropping": "Never crop.",
+        "partner_use": "approved"
+      },
+      {
+        "path": "assets/logos/epdc-mark-on-dark.svg",
+        "use": "Standalone diamond mark. White diamond, navy EPD.",
+        "backgrounds": [
+          "dark gradient",
+          "navy"
+        ],
+        "cropping": "Never crop.",
+        "partner_use": "approved",
+        "min_px": 24
+      },
+      {
+        "path": "assets/logos/epdc-mark-on-light.svg",
+        "use": "Standalone diamond mark. Navy diamond, white EPD.",
+        "backgrounds": [
+          "white",
+          "pale"
+        ],
+        "cropping": "Never crop.",
+        "partner_use": "approved",
+        "min_px": 24
+      },
+      {
+        "path": "assets/logos/process-now-white.png",
+        "use": "Process Now logo. Only where the two options are explained.",
+        "backgrounds": [
+          "dark"
+        ],
+        "cropping": "Never crop.",
+        "partner_use": "approved",
+        "templates": [
+          "two-payment-options"
+        ]
+      },
+      {
+        "path": "assets/logos/easy-pay-direct-white.png",
+        "use": "Easy Pay Direct logo. Only where the two options are explained.",
+        "backgrounds": [
+          "dark"
+        ],
+        "cropping": "Never crop.",
+        "partner_use": "approved",
+        "templates": [
+          "two-payment-options"
+        ]
+      }
+    ],
+    "payment_methods": {
+      "folder": "assets/payment-methods/",
+      "sources": "assets/payment-methods/SOURCES.md",
+      "use": "Show the ways buyers can pay. Real marks only.",
+      "backgrounds": [
+        "dark gradient (white single-color)",
+        "white (each brand's allowed color)"
+      ],
+      "cropping": "Never crop or alter.",
+      "partner_use": "pending",
+      "note": "Simple Icons versions match the site. Replace with brand-owner marks before partner use. Each brand's own guidelines apply."
+    },
+    "diagrams": [
+      {
+        "path": "assets/diagrams/foundation-diagram.png",
+        "use": "Foundation diagram: one platform layer over two processing options.",
+        "backgrounds": [
+          "dark"
+        ],
+        "cropping": "Use as is. Never crop through a card.",
+        "partner_use": "pending",
+        "note": "Captured from the epd.com Foundation section. The left card says 'Near-instant approval' instead of naming Process Now. Fix on the site, then recapture before partner use."
+      },
+      {
+        "path": "assets/diagrams/foundation-section-site-capture.png",
+        "use": "Full Foundation section, for reference.",
+        "backgrounds": [
+          "n/a"
+        ],
+        "cropping": "Reference only.",
+        "partner_use": "no"
+      }
+    ],
+    "screenshots": {
+      "folder": "assets/epd-commerce-features/",
+      "index": "messaging-kit/features/<slug>.md images block",
+      "use": "Product spotlight template and blog bodies.",
+      "backgrounds": [
+        "dark gradient",
+        "white"
+      ],
+      "cropping": "Scale to fit. Crop only to a whole panel or card. Never crop through text or numbers, never edit UI.",
+      "partner_use": "approved",
+      "note": "Numbers in screenshots are sample data and are never claims."
+    },
+    "backgrounds": [
+      {
+        "path": "assets/backgrounds/dark-gradient-{story,square,landscape}.png",
+        "use": "Default dark background for templates.",
+        "backgrounds": [
+          "n/a"
+        ],
+        "cropping": "Use at native size.",
+        "partner_use": "approved"
+      },
+      {
+        "path": "assets/backgrounds/dark-gradient-highlight-{story,square,landscape}.png",
+        "use": "Dark background with soft blue highlight behind imagery.",
+        "backgrounds": [
+          "n/a"
+        ],
+        "cropping": "Use at native size.",
+        "partner_use": "approved"
+      }
+    ],
+    "motif": [
+      {
+        "path": "assets/motif/hero-diamonds.svg",
+        "use": "Cascading diamond motif. Decorative.",
+        "backgrounds": [
+          "dark"
+        ],
+        "cropping": "May bleed off an edge. Never behind body text.",
+        "partner_use": "approved"
+      },
+      {
+        "path": "assets/motif/side-diamonds.svg",
+        "use": "Side-panel diamond motif from the site.",
+        "backgrounds": [
+          "dark"
+        ],
+        "cropping": "May bleed off an edge. Never behind body text.",
+        "partner_use": "approved"
+      }
     ]
   },
-
-  "trust_anchors": {
-    "built_on_easy_pay_direct_rail": [
-      { "value": "$12B+", "label": "PROCESSED" },
-      { "value": "100k+", "label": "BUSINESSES HELPED" },
-      { "value": "$48M+", "label": "REVENUE RECOVERED" },
-      { "value": "10+", "label": "YEARS PROCESSING" }
-    ],
-    "epd_commerce_at_launch": [
-      { "value": "5", "label": "RECOVERY TEMPLATES" },
-      { "value": "15", "label": "NOTIFICATION TRIGGERS" },
-      { "value": "43", "label": "USER PERMISSIONS" },
-      { "value": "7", "label": "USER ROLES" }
-    ]
-  },
-
-  "do_and_dont": {
-    "do": [
-      "Use sentence case in headlines.",
-      "Open features with a second-person imperative sentence fragment: \"Your revenue command center.\"",
-      "Title product features as proper nouns with periods: \"Revenue Recovery.\" \"Order Rescue.\"",
-      "Ground claims in specifics: 100k+ businesses, $12B+ processed, 5 recovery templates, 15 notification triggers.",
-      "Use commas, periods, or parentheses for pauses.",
-      "Spell the pillars exactly: Create, Analyze, React, Transact.",
-      "Use \"agentic commerce\" lowercase in running text.",
-      "Say what AI actually does: analyzes transactions, recovers failed payments.",
-      "Attribute agentic behavior to features. \"Order Rescue reaches customers.\" Not \"AI reaches customers.\""
-    ],
-    "dont": [
-      "Title Case Headlines That Feel Corporate.",
-      "Open with abstract nouns: \"A tool to manage revenue.\" \"Solutions for your catalog.\"",
-      "Lowercase feature names in body copy, or hedge them with generic words like \"our recovery system.\"",
-      "Use hype words: revolutionary, game-changing, supercharge.",
-      "Use em dashes. They are off brand.",
-      "Rename pillars or add new ones.",
-      "Capitalize \"agentic commerce\" mid-sentence.",
-      "Say \"AI runs the mechanics of your business.\" Do not overclaim.",
-      "Attribute product actions to \"AI\" as if it is a person. Name the feature."
-    ]
-  }
+  "image_generation_rules": [
+    "Composite logos, marks, motifs, diagrams, and screenshots from this repo. Never generate or redraw them.",
+    "AI illustrations only inside a template's image area, and only in families that allow them.",
+    "Illustrations contain no text, numbers, logos, payment marks, card brands, or UI."
+  ]
 }

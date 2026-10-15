@@ -7,7 +7,7 @@ aliases_incorrect:
   - "custom field"
   - "customer fields"
   - "product attributes"
-pillar: Create
+capability: Create
 status: shipped
 proper_noun: true
 one_liner: "Add any data you need to any product. Custom Fields become part of the checkout, the order record, and the customer file."

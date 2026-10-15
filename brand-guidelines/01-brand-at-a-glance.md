@@ -1,33 +1,47 @@
-# 01 Brand at a Glance
+# 01 Brand at a glance
 
-The one page you paste into an AI agent when you need a brand-aligned answer fast. Everything below is durable brand context. Product features, stats, and messaging live in the messaging kit.
+The one page to paste into an AI tool when you need a brand-aligned answer fast. Names live in `data/names.json`. Numbers live in `data/claims.json`.
 
 ## What EPD Commerce is
 
-EPD Commerce is a commerce platform that's agentic inside and out. Inside, AI is built into the parts of the platform where it earns its place. Outside, a hosted MCP server and open-source Agent Skills let external AI agents work with your catalog and payment rails directly.
+EPD Commerce helps businesses accept payments, then gives them the tools to sell, recover, and understand their revenue on top of those payments.
 
-Powered by Easy Pay Direct.
+Powered by Easy Pay Direct. EPD Commerce is a DBA of Easy Pay Direct LLC.
 
-## Positioning
+## Messaging hierarchy
 
-**Most AI helps you write faster. EPD Commerce helps you run better.**
+Lead with payments. Build up from there. Every piece of content follows this order, even if it only covers one level.
 
-EPD Commerce is the operating layer for agentic commerce. A platform that thinks with you. And handles the rest. One platform. Four things it does well: Create, Analyze, React, Transact.
+1. **Accept payments.** Take payments on your existing website, connected carts, checkouts, and payment links. Buyers pay how they want.
+2. **Two processing options.** Process Now for a fast start, or Easy Pay Direct for full underwriting and white-glove service. Same platform. Same dashboard. Same catalog. See `messaging-kit/payment-options.md`.
+3. **Tools built on top.** Revenue Recovery, The Professor, AI Product Landing Pages, Custom Fields, and the rest, organized by capability: Transact, React, Analyze, Create. See `messaging-kit/capabilities/`.
 
-## Tagline variants
+AI and agentic commerce are part of level 3, not the headline, unless the audience is specifically AI-focused.
 
-Primary tagline in market is the first. The others are approved supporting lines and can be used anywhere a shorter variation is needed.
+## Lines
+
+**Primary line (homepage hero):** Built to accept payments from humans and agents.
+
+**For AI-focused audiences only** (agentic commerce content, AI partners, developer audiences):
 
 - Most AI helps you write faster. EPD Commerce helps you run better.
-- The commerce platform that thinks with you.
 - Agentic inside and out.
-- One platform. Four things it does well.
+
+**Supporting lines** (approved anywhere):
+
+- Same platform. Same dashboard. Same catalog.
+- Change rails without changing how you operate.
+- Most platforms tell you a payment failed. EPD Commerce does something about it.
 
 ## The two brand names
 
 EPD Commerce and Easy Pay Direct are separate brands.
 
 - **EPD Commerce** is the commerce platform.
-- **Easy Pay Direct** is the payment processing infrastructure that powers it.
+- **Easy Pay Direct** is the payment processor behind it, and also the name of the fully underwritten processing option.
 
-Never use "EPD" as a standalone shorthand for Easy Pay Direct. If you need to say Easy Pay Direct, say it in full. "EPD" only appears as part of "EPD Commerce".
+Never write "EPD" alone to mean Easy Pay Direct. "EPD" only appears as part of "EPD Commerce."
+
+## Trust anchors
+
+Easy Pay Direct track record, always attributed to Easy Pay Direct: 12+ years processing, Billions processed, 100k+ businesses helped, $48M+ revenue recovered. Full records and status in `data/claims.json`.

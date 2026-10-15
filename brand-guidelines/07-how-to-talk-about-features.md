@@ -1,31 +1,35 @@
-# 07 How to Talk About Features
+# 07 How to talk about features
 
-The meta rules for referring to any named EPD Commerce feature. For what a feature is and does, see the messaging kit.
+The rules for referring to any named EPD Commerce feature. For what a feature is and does, see `messaging-kit/features/`. For exact names, see `data/names.json`.
 
 ## The rules
 
-1. **Feature names are proper nouns.** Capitalize them wherever they appear, including in body copy. "Revenue Recovery," not "revenue recovery." "The Data Professor," not "the data professor."
+1. **Feature names are proper nouns.** Capitalize them wherever they appear. "Revenue Recovery," not "revenue recovery." "The Professor," not "the professor."
+2. **Use the exact canonical spelling** from `data/names.json`. Do not shorten, translate, or abbreviate. Use the names exactly as they appear in the platform UI.
+3. **Do not invent capabilities.** Only describe what the feature file says the feature does.
+4. **Attribute agentic behavior specifically.** "The Professor creates a subscription from a plain-English request." "Order Rescue recovers failed one-time orders." Not "our AI handles it."
+5. **Do not rename features** to sound more marketing-friendly.
+6. **Do not use a feature name as a verb.**
+7. **Introduce a feature with what it does, not with its capability name.** The capability name is optional context and, if used, follows the rules in `03-capabilities.md`.
 
-2. **Use the exact canonical spelling.** Every named feature has one correct spelling. It lives in the frontmatter of that feature's file in `messaging-kit/features/`. If you are producing copy about a feature, look up the canonical spelling first. Do not shorten it, do not translate it, do not invent an abbreviation.
+## Release status
 
-3. **Do not invent capabilities.** If the product does not ship it yet, do not attribute it to the feature. Roadmap features are marked as such in the messaging kit and are written in present tense once we're inside their release window, not before.
+Every feature file has a `status` field with one of four values.
 
-4. **Attribute agentic behavior specifically.** When AI does something, say what AI does. "The Data Professor analyzes your transactions in plain English." "Order Rescue recovers failed one-time orders." Not "our AI handles it."
+| Status | Meaning | How to write about it |
+|---|---|---|
+| `shipped` | Released and generally available | Present tense |
+| `beta` | Released to some or all accounts as a beta | Present tense, always labeled "(beta)" |
+| `in-development` | Being built, no confirmed release | Future tense, "coming soon," no dates |
+| `planned` | On the roadmap | Do not mention publicly |
 
-5. **Do not rename features to sound more marketing-friendly.** If Revenue Recovery is the product name, it is "Revenue Recovery" in the headline, the body, the ad, and the tooltip.
+Use present tense only after the release is confirmed. A target date or release window is not a confirmed release.
 
-6. **Do not use the feature name as a verb.** "You can enable Revenue Recovery," not "you can Revenue Recovery your subscriptions."
+## What each feature file contains
 
-7. **Feature names travel together with their pillar.** When introducing a feature for the first time in a piece, name its pillar too. "In the React pillar, Revenue Recovery..." After the first mention, drop the pillar reference unless clarity requires it.
-
-## What the messaging kit gives you
-
-Every named feature has a file at `messaging-kit/features/<feature-slug>.md` with:
-
-- The canonical spelling in frontmatter.
-- Wrong spellings and aliases to avoid in frontmatter.
-- The pillar it belongs to in frontmatter.
-- Shipping status in frontmatter (shipping, or a release window like `late-july`).
-- What it is, how it works, and how to talk about it in the body.
-
-When you're producing copy that names a feature, open that feature's file. Everything you need is there.
+- `canonical_spelling` and `aliases_incorrect`
+- `capability` (Transact, React, Analyze, or Create)
+- `status` (see above)
+- `one_liner`
+- `images` (approved screenshots, if any)
+- What it is, how it works, and how to talk about it

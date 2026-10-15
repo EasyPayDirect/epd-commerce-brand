@@ -1,109 +1,48 @@
-# AGENTS.md — EPD Commerce Brand
+# AGENTS.md: EPD Commerce brand
 
-Read this before designing, writing, or generating anything for EPD Commerce.
+Read this first. It points to the files that hold the rules. If two files disagree, the `data/` files win.
 
-## Where to load everything
+## Load order
 
-- **Machine-readable manifest:** `.well-known/brand-assets.json` — colors, fonts, logos, motif, taglines, trust anchors, do/don't, all in one JSON.
-- **Guidelines (human-readable):** `brand-guidelines/` — 7 numbered markdown files.
-- **Messaging kit:** `messaging-kit/` — pillar descriptions and per-feature copy files.
-- **Raw assets:** `assets/logos/` and `assets/motif/`.
+1. `data/names.json`: every brand, option, capability, and feature name, plus never-use lists.
+2. `data/claims.json`: every approved number with attribution, status, and required qualifiers.
+3. `.well-known/brand-assets.json`: colors, surfaces, components, fonts, and the asset library with partner-use status.
+4. `templates/`: studio template specs (story, square, landscape) for five families.
+5. `messaging-kit/`: approved copy. `payment-options.md`, `capabilities/`, `features/`.
+6. `brand-guidelines/`: human-readable guidelines.
 
-If you can only read one file, read `.well-known/brand-assets.json`.
+## Rules that never change
 
-## The five rules that never change
+1. **Two brands.** EPD Commerce is the platform. Easy Pay Direct is the processor. Never write "EPD" alone to mean Easy Pay Direct.
+2. **Lead with payments.** Accept payments, then the two processing options, then the tools. AI-first lines are for AI-focused audiences only.
+3. **Exact names only.** Use `data/names.json` and the names in the product UI. The Professor, never The Data Professor.
+4. **Approved claims only.** If a number is not approved in `data/claims.json`, do not use it. Keep its attribution and qualifier.
+5. **No em dashes.** Use commas, periods, or parentheses.
+6. **Sentence case.** DM Mono eyebrows, labels, and buttons are uppercase.
+7. **Never name banking partners.** Say "one of our banking partners."
+8. **Release status.** Present tense only after a confirmed release. See `brand-guidelines/07-how-to-talk-about-features.md`.
 
-1. **Two separate brands.** "EPD Commerce" is the product. "Easy Pay Direct" is the parent payment processor. Never use "EPD" as shorthand for Easy Pay Direct. Never combine them into "EPD Commerce by EPD."
-2. **Sentence case in headlines.** Never Title Case. Never ALL CAPS except in DM Mono eyebrows.
-3. **No em dashes.** Ever. Use commas, periods, or parentheses.
-4. **Feature names are proper nouns.** "Revenue Recovery." "Order Rescue." "The Data Professor." Always capitalized. Use canonical spellings from the messaging kit.
-5. **Pillars are always Create, Analyze, React, Transact.** In that order. Always capitalized. Never renamed.
+## Generating images
 
-## Voice in one line
+1. Start from a template in `templates/`. The template controls logo, type, colors, layout, and CTA.
+2. Composite real files from `assets/`. Never generate or redraw logos, payment marks, diagrams, screenshots, or UI.
+3. AI illustrations only inside a template's image area, in families that allow them, with no text, logos, or UI.
+4. Use backgrounds from `assets/backgrounds/`. Dark sections never fade to white.
+5. Check each asset's `partner_use` before using it in partner graphics.
 
-Confident, plainspoken, grounded. Short declarative sentences. Talk to "you" and "your business." The product does things on your behalf. No hype, no hedging, no exclamation points.
+## Writing copy
 
-## Color quick reference
+1. Open the relevant file in `messaging-kit/` before writing about a feature, capability, or processing option.
+2. If a feature has no file, or its status is `planned`, do not mention it.
+3. Follow `brand-guidelines/06-voice-and-copy.md`.
 
-- **Primary blue:** `#0056BB` (used for links, CTAs, eyebrow accents)
-- **CTA blue:** `#006EE8` (buttons and hover)
-- **Text:** `#0E1422` heading / `#4A5878` body / `#64748B` muted
-- **Backgrounds:** `#FFFFFF` white / `#EBEDF6` pale (only neutral tint)
-- **Hero gradient:** `linear-gradient(to bottom, #003c7e 0%, #003c7e 38%, #6a9bd1 75%, #ffffff 100%)`
-- **Pillar accents** (pill labels and eyebrows only, never large fills): Create `#0056BB`, Analyze `#7C3AED`, React `#EA580C`, Transact `#0E9F5A`
-- **Green is semantic only.** In-product success states. Never on marketing surfaces.
+## Blog body images
 
-## Typography
+Approved screenshots live in `assets/epd-commerce-features/<slug>/`, indexed by the `images:` block in each `messaging-kit/features/<slug>.md`.
 
-- **Headings and body:** General Sans (Fontshare)
-- **Eyebrows and technical labels:** DM Mono
-
-## Logos
-
-- **Horizontal is primary.** `assets/logos/epdc-horizontal.svg` (source) or `assets/logos/epdc-horizontal-navy-on-light.png` for use on light backgrounds. Use `assets/logos/epdc-horizontal-on-navy.png` for use on navy backgrounds.
-- **Stacked is secondary.** `assets/logos/epdc-stacked.png`. Only for square or narrow vertical spaces.
-- **Minimum sizes:** horizontal 120px wide on screen, 1 inch print. Stacked 80px on screen, 0.75 inch print.
-
-## Motif
-
-Cascading diamond outlines. `assets/motif/hero-diamonds.svg`. Use as background decoration. Drop opacity to 40-60% when placing over other content. Never use motifs generated by AI. Composite from this file.
-
-## Taglines
-
-- **Primary:** Most AI helps you write faster. EPD Commerce helps you run better.
-- **Variants:** The commerce platform that thinks with you. / Agentic inside and out. / One platform. Four things it does well.
-
-## Trust anchors (numbers you can use in claims)
-
-Built on the Easy Pay Direct rail: $12B+ processed, 100k+ businesses helped, $48M+ revenue recovered, 10+ years processing.
-
-EPD Commerce at launch: 5 recovery templates, 15 notification triggers, 43 user permissions, 7 user roles.
-
-## Do and don't (the short version)
-
-**Do:** Sentence case. Specific numbers. Feature names capitalized as proper nouns. Second person ("you," "your business"). Say what AI actually does.
-
-**Don't:** Title Case. Abstract nouns like "solutions" or "a tool for." Em dashes. Hype words (revolutionary, game-changing, supercharge). Attributing actions to "AI" as if it is a person — name the feature instead.
-
-## When you are generating an image
-
-1. Use the real motif from `assets/motif/hero-diamonds.svg`. Composite it. Never draw a diamond motif from scratch.
-2. Use the real logo from `assets/logos/`. Never generate a logo.
-3. Use the hero gradient exactly: `linear-gradient(to bottom, #003c7e 0%, #003c7e 38%, #6a9bd1 75%, #ffffff 100%)`.
-4. Text stays on solid or minimally-textured areas. Never place body text over the busy part of the motif.
-5. If placing text on the gradient: white/off-white above the 40% mark, dark navy below the 55% mark.
-
-## When you are writing copy
-
-1. Look up the feature in `messaging-kit/features/<slug>.md` before writing about it. Use the canonical spelling.
-2. If the feature file does not exist yet, the feature is not shipped or documented. Do not claim it.
-3. Read the pillar file for context on where the feature fits.
-4. Follow the voice guide in `brand-guidelines/06-voice-and-copy.md`.
-
-## Feature screenshots (blog body images)
-
-Every shipped feature has real product screenshots in `assets/epd-commerce-features/<slug>/`. Use them in blog bodies. Never generate synthetic screenshots.
-
-1. Read the feature's `images:` frontmatter block from `messaging-kit/features/<slug>.md`. If there is no `images:` block, the feature has no approved screenshots yet and the blog runs text-only.
-2. Use `images.hero` for the featured image or the top of the body. Use `images.gallery` for placements throughout the body.
-3. Follow the placement rule in each gallery entry:
-   - `after-what-it-does` → after the "What it is / What it does" section
-   - `after-how-it-works` → after the "How it works" section
-   - `after-how-to-talk` → near the end of the body
-   - `sidebar` → float right, 40% width, wrap paragraph text around it
-4. Respect orientation:
-   - `landscape` (aspect > 1.4:1) — full-width in body, centered, caption below in small italic muted text
-   - `portrait` (aspect < 0.8:1) — sidebar float, never full-width
-   - `square` — centered, 60% width, no text wrap
-5. Every image gets alt text from the manifest. Never blank.
-6. Cap: 1 hero + max 3 body images per blog. Beyond that the article turns into a slideshow. If the manifest has more, pick the first 3 gallery entries in order.
-7. Distribute evenly. Never stack images at the top or the bottom. Never place an image inside the intro paragraph.
-
-## Common mistakes to avoid
-
-- Writing "EPD" alone. Always spell out "EPD Commerce" or "Easy Pay Direct."
-- Using pillar accent colors as large surface fills.
-- Using green on marketing surfaces.
-- Using em dashes.
-- Making up feature capabilities. Only claim what is in the messaging kit.
-- Titling a feature name in lowercase in the middle of a sentence.
+1. No `images:` block means no approved screenshots. Run the blog text-only.
+2. `images.hero` goes at the top. `images.gallery` entries go where their `placement` says: `after-what-it-does`, `after-how-it-works`, `after-how-to-talk`, or `sidebar` (float right, 40% width).
+3. Orientation: `landscape` full width with caption below, `portrait` sidebar only, `square` centered at 60% width.
+4. Every image gets its alt text from the manifest.
+5. Maximum 1 hero and 3 body images, spread evenly, never inside the intro paragraph.
+6. Never generate synthetic screenshots.

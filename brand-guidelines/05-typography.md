@@ -1,38 +1,49 @@
 # 05 Typography
 
-Two typefaces. Sentence case. Mono for anything technical.
+Two typefaces: **General Sans** for headlines and body, **DM Mono** for eyebrows, labels, and buttons. Sentence case everywhere except DM Mono text, which is uppercase.
 
-## The two typefaces
+Fallbacks: General Sans → DM Sans, Inter, system-ui. DM Mono → JetBrains Mono, Menlo.
 
-**General Sans**
-Headlines, body copy, UI. The workhorse font. Weights 400, 500, 600, 700. Headlines run at 500 to 600 in sentence case.
+## Website components
 
-**DM Mono**
-Eyebrows, labels, pills, buttons, stat numbers. Weights 400 and 500. UPPERCASE with 0.84px letter-spacing at 14px.
+Measured from the live epd.com site.
 
-## Type scale
+| Component | Font | Size / line height | Weight | Tracking | Color |
+|---|---|---|---|---|---|
+| Hero headline | General Sans | 38 / 1.12 (34 tablet, 30 mobile) | 500 | -0.025em | White on dark |
+| Feature section headline (dark) | General Sans | 60 / 0.98 | 540 | -0.052em | White, second line `#8DCAFF` |
+| Section headline (light) | General Sans | 40 / 1.15 | 500 | -1px | `#000000` to `#0E1422` |
+| Card headline | General Sans | 22 to 28 / 1.2 | 500 | -0.01em | |
+| Lede | General Sans | 18 / 1.55 | 400 | 0 | `#D1D8E7` on dark, `#4A5878` on light |
+| Body | General Sans | 16 / 1.6 | 400 | 0 | Same as lede |
+| Small body | General Sans | 14 / 1.5 | 400 | 0 | |
+| Eyebrow | DM Mono | 12 to 14 / 1.2 | 500 | 0.12em to 0.16em | `#0056BB` on light, `#87C5FF` on dark |
+| Label / pill | DM Mono | 11 to 12 / 1.2 | 500 | 0.08em | |
+| Button | DM Mono | 14 / 1 | 500 | 0.42px (0.03em) | See `04-color.md` |
+| Text link CTA | DM Mono | 14 / 1 | 500 | 0.06em | `#0056BB`, hover `#003C7E` |
 
-Every text role uses one of these steps. Numbers are for the site (px). Multiply by 0.75 for approximate print pt.
+Eyebrows may start with a short 24px horizontal rule in the same color, as in the site's "THE FOUNDATION" eyebrow. Draw the rule as a line. Never type it as a dash character.
 
-| Role | Font | Size / Line | Weight / Track | Where it lives |
-|---|---|---|---|---|
-| Display | General Sans | 56 / 60 | 600 / -1.5% | Hero headline only |
-| H1 | General Sans | 40 / 46 | 600 / -1.0% | Section headlines |
-| H2 | General Sans | 28 / 34 | 600 / -0.5% | Card headlines, feature titles |
-| H3 | General Sans | 20 / 26 | 600 / 0 | Sub-section headlines |
-| Lede | General Sans | 18 / 28 | 400 / 0 | Paragraph directly under a headline |
-| Body | General Sans | 16 / 26 | 400 / 0 | Default paragraph copy |
-| Body Small | General Sans | 14 / 22 | 400 / 0 | Card body, footnotes, captions |
-| Micro | General Sans | 12 / 18 | 500 / 0 | Table headers, legal text |
-| Eyebrow | DM Mono | 12 / 16 | 500 / +14% | Uppercase label above headlines |
-| Button / CTA | General Sans | 16 / 20 | 400 / 0 | Primary CTA text (soft off-white) |
-| Mono label | DM Mono | 11 / 14 | 500 / +14% | Pills, stat labels, tags |
+## Social and partner graphics
+
+Sizes are in px at the template's native size. Template-specific limits are in `templates/`.
+
+| Element | Story 1080×1920 | Square 1080×1080 | Landscape 1200×628 |
+|---|---|---|---|
+| Headline (General Sans 500, -0.03em, lh 1.05) | 96 | 76 | 56 |
+| Headline max lines | 4 | 3 | 2 |
+| Subhead / body (General Sans 400, lh 1.35) | 40 | 34 | 26 |
+| Body max lines | 4 | 3 | 2 |
+| Eyebrow (DM Mono 500, 0.14em, uppercase) | 28 | 24 | 18 |
+| CTA (DM Mono 500, 0.04em, uppercase) | 30 | 26 | 20 |
+| Footnote / qualifier (General Sans 400) | 24 | 20 | 15 |
+| Minimum text size anywhere | 24 | 20 | 15 |
 
 ## Rules
 
-- Sentence case for everything except DM Mono eyebrows, pills, and buttons (which are UPPERCASE).
-- No underlined text except hyperlinks in body copy.
-- No italics as decoration. Italics only for actual titles of works.
-- Numbers use tabular figures (`font-variant-numeric: tabular-nums`) in tables, stats, and data readouts.
-- Line-height ratio is 1.15 for headlines, 1.6 for body copy. Never tighter, never looser.
-- Letter-spacing is 0 by default. Mono eyebrows and pills use +14% (0.84px at 12px) for legibility at small sizes.
+- Sentence case for headlines and body. DM Mono eyebrows, labels, and buttons are uppercase.
+- No Title Case. No all-caps General Sans.
+- One headline accent per layout at most (the second line in `#8DCAFF` on dark or `#0056BB` on light).
+- No italics as decoration. No underlines except body hyperlinks.
+- Tabular figures for stats and tables (`font-variant-numeric: tabular-nums`).
+- Never letterspace General Sans positively.

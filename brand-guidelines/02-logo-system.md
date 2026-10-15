@@ -1,4 +1,4 @@
-# 02 Logo System
+# 02 Logo system
 
 ## The primary lockup
 
@@ -11,14 +11,23 @@ The horizontal lockup is the default. Diamond mark with white "EPD" inside, ital
 - Never split the two words across a line break in headlines.
 - Never use the diamond mark in place of the word "EPD" inline in body copy.
 
-## Variants
+## Files
 
-Four approved variants. Pick the one that matches the background.
+| File | Use | Backgrounds |
+|---|---|---|
+| `assets/logos/epdc-horizontal-white.png` | Primary lockup on dark. Transparent background. | Dark gradient, navy, dark photos |
+| `assets/logos/epdc-horizontal-navy-on-light.png` | Primary lockup on light | White, pale, tint |
+| `assets/logos/epdc-horizontal-on-navy.png` | Lockup on a solid navy tile (not transparent) | Use only where a solid tile is wanted |
+| `assets/logos/epdc-horizontal.svg` | Source vector | Any, for print and large sizes |
+| `assets/logos/epdc-stacked.png` | Square and narrow vertical spaces | Light |
+| `assets/logos/epdc-mark-on-dark.svg` | Standalone diamond mark: white diamond, navy EPD | Dark |
+| `assets/logos/epdc-mark-on-light.svg` | Standalone diamond mark: navy diamond, white EPD | Light |
+| `assets/logos/process-now-white.png` | Process Now logo, white | Dark only |
+| `assets/logos/easy-pay-direct-white.png` | Easy Pay Direct logo, white | Dark only |
 
-- **Horizontal, navy on light** — the default lockup on white or pale backgrounds.
-- **Horizontal, reversed on dark** — for the hero band, dark CTA panels, and any deep-navy surface.
-- **Stacked** — square social avatars and tight vertical placements only.
-- **Mark only** — favicons, app icons, and social platform avatars where the wordmark would be illegible.
+The diamond mark alone is for avatars, favicons, app icons, and small corner placements. Never use it inline in a sentence in place of "EPD."
+
+Process Now and Easy Pay Direct logos appear only in content that explains the two processing options. They never replace the EPD Commerce logo.
 
 ## Clearspace and minimum size
 
@@ -34,7 +43,7 @@ Common misuses. Any of these voids the brand. If a partner or vendor produces wo
 
 - **Do not recolor.** The diamond is navy on light or white on dark. Never other colors, never gradients.
 - **Do not stretch or distort.** Width and height scale together.
-- **Do not add effects.** No glow, no shadow, no bevel, no stroke, no outline. The logo is a solid shape.
+- **Do not add effects.** No glow, no shadow, no bevel, no stroke, no outline. The logo is a solid shape, even where cards around it use shadows.
 - **Do not rotate or tilt.** The diamond sits upright as a rotated square. Never rotate further.
 - **Do not place on busy imagery.** If a photo or pattern makes the logo unreadable, place the logo on a solid navy or white bar over the imagery.
 - **Do not swap the wordmark font.** COMMERCE is a specific italic slab treatment. Never replace with a generic italic or bold sans.

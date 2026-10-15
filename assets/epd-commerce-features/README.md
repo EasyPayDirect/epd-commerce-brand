@@ -14,9 +14,9 @@ assets/epd-commerce-features/
 
 Filenames tell you the orientation without opening the file:
 
-- `{n}-landscape.png` — aspect > 1.4:1. Body hero, full-width placement.
-- `{n}-portrait.png` — aspect < 0.8:1. Sidebar or side-of-paragraph. Never full-width.
-- `{n}-square.png` — 0.8:1 to 1.4:1. Center, 60% width, no text wrap.
+- `{n}-landscape.png`: aspect > 1.4:1. Body hero, full-width placement.
+- `{n}-portrait.png`: aspect < 0.8:1. Sidebar or side-of-paragraph. Never full-width.
+- `{n}-square.png`: 0.8:1 to 1.4:1. Center, 60% width, no text wrap.
 
 ## Where the metadata lives
 
@@ -30,9 +30,9 @@ That file has an `images:` frontmatter block that maps each file here to its int
 
 ## Currently shipped
 
-- `the-professor/` — plain-English data queries with charts and summaries
-- `custom-fields/` — merchant-defined product fields
-- `ai-product-landing-pages/` — AI-generated product landing pages
+- `the-professor/`: plain-English data queries with charts and summaries
+- `custom-fields/`: merchant-defined product fields
+- `ai-product-landing-pages/`: AI-generated product landing pages
 
 ## How the release bot uses these
 

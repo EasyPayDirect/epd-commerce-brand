@@ -1,0 +1,145 @@
+{
+  "_about": "Every reusable number or factual claim, with who it belongs to, who approved it, and when it was last reviewed. Only claims with status 'approved' may appear in generated copy or graphics. Repeating a number on the website does not make it approved. If a claim you want is not here, do not use it.",
+  "updated": "2026-10-15",
+  "status_values": {
+    "approved": "Use as written. Keep the attribution.",
+    "pending": "Do not use until approved.",
+    "retired": "Do not use. Kept here so it is not reintroduced."
+  },
+  "attribution_rule": "Easy Pay Direct track record is not EPD Commerce results. Easy Pay Direct claims must be attributed to Easy Pay Direct (for example 'Powered by Easy Pay Direct' or 'on Easy Pay Direct rails'). Never present them as EPD Commerce outcomes.",
+
+  "claims": [
+    {
+      "id": "epd-years-processing",
+      "display": "12+ years processing",
+      "short": "12+",
+      "label": "years processing",
+      "attribution": "Easy Pay Direct",
+      "status": "approved",
+      "source": "Easy Pay Direct company history. Confirmed by Head of Marketing.",
+      "approved_by": "Vince Bitetti, Head of Marketing",
+      "last_reviewed": "2026-10-15",
+      "notes": "Replaces '10+ years', 'more than a decade', and '18 years'. Update the site where those appear."
+    },
+    {
+      "id": "epd-volume-processed",
+      "display": "Billions processed",
+      "short": "Billions",
+      "label": "processed",
+      "attribution": "Easy Pay Direct",
+      "status": "approved",
+      "source": "Easy Pay Direct processing history. Confirmed by Head of Marketing.",
+      "approved_by": "Vince Bitetti, Head of Marketing",
+      "last_reviewed": "2026-10-15",
+      "notes": "Always 'Billions'. Never a specific dollar figure."
+    },
+    {
+      "id": "epd-businesses-helped",
+      "display": "100k+ businesses helped",
+      "short": "100k+",
+      "label": "businesses helped",
+      "attribution": "Easy Pay Direct",
+      "status": "approved",
+      "source": "Easy Pay Direct merchant history. Confirmed by Head of Marketing.",
+      "approved_by": "Vince Bitetti, Head of Marketing",
+      "last_reviewed": "2026-10-15"
+    },
+    {
+      "id": "epd-revenue-recovered",
+      "display": "$48M+ revenue recovered",
+      "short": "$48M+",
+      "label": "revenue recovered",
+      "attribution": "Easy Pay Direct",
+      "status": "approved",
+      "source": "Easy Pay Direct recovery and routing history. Confirmed by Head of Marketing.",
+      "approved_by": "Vince Bitetti, Head of Marketing",
+      "last_reviewed": "2026-10-15",
+      "notes": "This is Easy Pay Direct's historical result, not an EPD Commerce Revenue Recovery result."
+    },
+    {
+      "id": "epd-volume-12b",
+      "display": "$12B+ processed",
+      "attribution": "Easy Pay Direct",
+      "status": "retired",
+      "notes": "Replaced by 'Billions processed'. Still appears on the epd.com homepage stats band."
+    },
+    {
+      "id": "epd-years-18",
+      "display": "18 years",
+      "attribution": "Easy Pay Direct",
+      "status": "retired",
+      "notes": "Conflicts with the approved 12+ years. Still appears in the epd.com homepage FAQ."
+    },
+    {
+      "id": "epd-years-10",
+      "display": "10+ years / more than a decade",
+      "attribution": "Easy Pay Direct",
+      "status": "retired",
+      "notes": "Replaced by 12+ years. Still appears on the epd.com About page."
+    },
+    {
+      "id": "epdc-launch-recovery-templates",
+      "display": "5 recovery templates",
+      "attribution": "EPD Commerce",
+      "status": "pending",
+      "notes": "Matches the five default Recovery Templates seen in the product. Needs product confirmation before reuse."
+    },
+    {
+      "id": "epdc-launch-notification-triggers",
+      "display": "15 notification triggers",
+      "attribution": "EPD Commerce",
+      "status": "pending",
+      "notes": "Needs product confirmation. The Billing Notifications screen reviewed in August showed 14 lifecycle notifications."
+    },
+    {
+      "id": "epdc-launch-permissions",
+      "display": "43 user permissions",
+      "attribution": "EPD Commerce",
+      "status": "pending",
+      "notes": "Needs product confirmation."
+    },
+    {
+      "id": "epdc-launch-roles",
+      "display": "7 user roles",
+      "attribution": "EPD Commerce",
+      "status": "pending",
+      "notes": "Needs product confirmation."
+    },
+    {
+      "id": "process-now-approval-time",
+      "display": "Approval is often same day",
+      "attribution": "Process Now",
+      "status": "approved",
+      "source": "epd.com Payment Options page, confirmed by Head of Marketing.",
+      "approved_by": "Vince Bitetti, Head of Marketing",
+      "last_reviewed": "2026-10-15",
+      "required_qualifier": "Subject to review. Approval is not guaranteed.",
+      "notes": "The site also says 'often within an hour'. Use that only alongside the qualifier."
+    },
+    {
+      "id": "epd-approval-time",
+      "display": "Typical approval in 1 to 3 days",
+      "attribution": "Easy Pay Direct",
+      "status": "approved",
+      "source": "epd.com Payment Options page, confirmed by Head of Marketing.",
+      "approved_by": "Vince Bitetti, Head of Marketing",
+      "last_reviewed": "2026-10-15",
+      "required_qualifier": "Depends on how quickly documents arrive. Approval is not guaranteed."
+    },
+    {
+      "id": "process-now-volume-fit",
+      "display": "Generally under $25K a month",
+      "attribution": "Process Now",
+      "status": "approved",
+      "source": "epd.com Payment Options page, confirmed by Head of Marketing.",
+      "approved_by": "Vince Bitetti, Head of Marketing",
+      "last_reviewed": "2026-10-15",
+      "required_qualifier": "A fit recommendation, not a cutoff."
+    }
+  ],
+
+  "never_reuse_as_claims": [
+    "Any number shown inside product demos, dashboards, or animated site visuals (for example Revenue Recovered $275K or $329K, Agentic Sales $18,356 or $25,000, Recovery Rate 87.8%). These are sample data and change on each page load.",
+    "Any number in a product screenshot, unless that exact number is listed above as approved."
+  ]
+}

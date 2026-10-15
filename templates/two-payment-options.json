@@ -1,0 +1,306 @@
+{
+  "_generated_by": "templates/build.py. Edit the script, then rerun.",
+  "id": "two-payment-options",
+  "title": "Two payment options",
+  "purpose": "Explain Process Now and Easy Pay Direct side by side, built on the Foundation section.",
+  "version": "1.0",
+  "updated": "2026-10-15",
+  "backgrounds": {
+    "dark-gradient-highlight": {
+      "story": "assets/backgrounds/dark-gradient-highlight-story.png",
+      "square": "assets/backgrounds/dark-gradient-highlight-square.png",
+      "landscape": "assets/backgrounds/dark-gradient-highlight-landscape.png"
+    }
+  },
+  "type": {
+    "eyebrow": "DM Mono 500, uppercase, 0.14em tracking. #87C5FF on dark, #0056BB on light.",
+    "headline": "General Sans 500, sentence case, -0.03em tracking, line height 1.05. White on dark, #0E1422 on light. Optional second-line accent #8DCAFF on dark.",
+    "body": "General Sans 400, line height 1.35. #D1D8E7 on dark, #4A5878 on light.",
+    "cta": "DM Mono 500, uppercase, 0.04em tracking.",
+    "footnote": "General Sans 400, line height 1.3. #8FA0BF on dark, #64748B on light."
+  },
+  "flow": "Slots give the maximum box for each element. Eyebrow, headline, and body flow top down: unused lines collapse, and the image area moves up and grows to fill the space. Logo, CTA, and footnote stay fixed.",
+  "logo": {
+    "placement": "Top left of the safe area. Never moved, resized, or recolored by AI.",
+    "on_dark": "assets/logos/epdc-horizontal-white.png",
+    "on_light": "assets/logos/epdc-horizontal-navy-on-light.png",
+    "clearspace": "Height of the diamond on all sides."
+  },
+  "cta": {
+    "treatment": "Primary button. On dark: white fill, #00499A text. On light: #00499A fill, white text. No shadow, no gradient, no pill shape.",
+    "approved_labels": [
+      "GET ACCESS",
+      "SEE PAYMENT OPTIONS",
+      "LEARN MORE"
+    ],
+    "rule": "Add labels only with marketing approval."
+  },
+  "qualifier": {
+    "when": "always required",
+    "text": "All applications subject to review. Approval is not guaranteed.",
+    "slot": "footnote"
+  },
+  "image_area": {
+    "kind": "option-cards",
+    "source": "assets/logos/process-now-white.png, assets/logos/easy-pay-direct-white.png",
+    "rules": [
+      "Two equal cards, Process Now first. Each card: option logo or name, one fit line, one timing line.",
+      "Card copy is fixed. Process Now: 'Low-risk, lower-volume businesses. Approval is often same day.' Easy Pay Direct: 'Full underwriting and white-glove service. Typically 1 to 3 days.'",
+      "Card fill rgba(255,255,255,.06), 1px rgba(141,202,255,.25) border, 16px radius.",
+      "The Foundation diagram (assets/diagrams/foundation-diagram.png) may replace the cards in landscape only, once approved for partner use."
+    ]
+  },
+  "copy_sources": [
+    "messaging-kit/payment-options.md",
+    "data/claims.json"
+  ],
+  "ai": {
+    "may": [
+      "Suggest eyebrow, headline, and body copy using only approved facts from data/claims.json, data/names.json, and messaging-kit/.",
+      "Adapt wording for the selected audience within the text limits.",
+      "Pick a CTA label from the approved list."
+    ],
+    "may_not": [
+      "Change the layout, fonts, type sizes, colors, logo, or logo placement.",
+      "Add numbers or claims that are not approved in data/claims.json.",
+      "Draw, redraw, or alter logos, payment-method marks, product screenshots, or UI.",
+      "Use em dashes.",
+      "Name banking partners."
+    ]
+  },
+  "example_copy": {
+    "eyebrow": "TWO WAYS TO PROCESS",
+    "headline": "Same platform.\nSame dashboard.\nSame catalog.",
+    "body": "Process Now or Easy Pay Direct. Your choice.",
+    "cta": "SEE PAYMENT OPTIONS"
+  },
+  "formats": {
+    "story": {
+      "canvas": {
+        "w": 1080,
+        "h": 1920
+      },
+      "safe_area": {
+        "x": 96,
+        "y": 250,
+        "w": 888,
+        "h": 1390
+      },
+      "slots": {
+        "logo": {
+          "x": 96,
+          "y": 250,
+          "w": 284,
+          "h": 80,
+          "asset": "assets/logos/epdc-horizontal-white.png"
+        },
+        "eyebrow": {
+          "x": 96,
+          "y": 410,
+          "w": 888,
+          "h": 34,
+          "font_px": 28,
+          "max_lines": 1,
+          "max_chars": 37
+        },
+        "headline": {
+          "x": 96,
+          "y": 484,
+          "w": 888,
+          "h": 303,
+          "font_px": 96,
+          "max_lines": 3,
+          "max_chars": 51
+        },
+        "body": {
+          "x": 96,
+          "y": 827,
+          "w": 888,
+          "h": 108,
+          "font_px": 40,
+          "max_lines": 2,
+          "max_chars": 84
+        },
+        "image_area": {
+          "x": 96,
+          "y": 1015,
+          "w": 888,
+          "h": 346,
+          "kind": "option-cards",
+          "optional": false
+        },
+        "cta": {
+          "x": 96,
+          "y": 1441,
+          "w": null,
+          "h": 96,
+          "font_px": 30,
+          "padding_x": 40,
+          "radius": 8
+        },
+        "footnote": {
+          "x": 96,
+          "y": 1577,
+          "w": 888,
+          "h": 63,
+          "font_px": 24,
+          "max_lines": 2,
+          "max_chars": 140
+        }
+      }
+    },
+    "square": {
+      "canvas": {
+        "w": 1080,
+        "h": 1080
+      },
+      "safe_area": {
+        "x": 80,
+        "y": 80,
+        "w": 920,
+        "h": 920
+      },
+      "slots": {
+        "logo": {
+          "x": 80,
+          "y": 80,
+          "w": 213,
+          "h": 60,
+          "asset": "assets/logos/epdc-horizontal-white.png"
+        },
+        "eyebrow": {
+          "x": 80,
+          "y": 196,
+          "w": 920,
+          "h": 29,
+          "font_px": 24,
+          "max_lines": 1,
+          "max_chars": 45
+        },
+        "headline": {
+          "x": 80,
+          "y": 253,
+          "w": 920,
+          "h": 240,
+          "font_px": 76,
+          "max_lines": 3,
+          "max_chars": 67
+        },
+        "body": {
+          "x": 80,
+          "y": 521,
+          "w": 920,
+          "h": 46,
+          "font_px": 34,
+          "max_lines": 1,
+          "max_chars": 51
+        },
+        "image_area": {
+          "x": 80,
+          "y": 623,
+          "w": 920,
+          "h": 161,
+          "kind": "option-cards",
+          "optional": false
+        },
+        "cta": {
+          "x": 80,
+          "y": 840,
+          "w": null,
+          "h": 80,
+          "font_px": 26,
+          "padding_x": 33,
+          "radius": 8
+        },
+        "footnote": {
+          "x": 80,
+          "y": 948,
+          "w": 920,
+          "h": 52,
+          "font_px": 20,
+          "max_lines": 2,
+          "max_chars": 174
+        }
+      }
+    },
+    "landscape": {
+      "canvas": {
+        "w": 1200,
+        "h": 628
+      },
+      "safe_area": {
+        "x": 64,
+        "y": 56,
+        "w": 1072,
+        "h": 516
+      },
+      "slots": {
+        "logo": {
+          "x": 64,
+          "y": 56,
+          "w": 142,
+          "h": 40,
+          "asset": "assets/logos/epdc-horizontal-white.png"
+        },
+        "eyebrow": {
+          "x": 64,
+          "y": 132,
+          "w": 536,
+          "h": 22,
+          "font_px": 18,
+          "max_lines": 1,
+          "max_chars": 36
+        },
+        "headline": {
+          "x": 64,
+          "y": 172,
+          "w": 536,
+          "h": 177,
+          "font_px": 56,
+          "max_lines": 3,
+          "max_chars": 51
+        },
+        "body": {
+          "x": 64,
+          "y": 367,
+          "w": 536,
+          "h": 71,
+          "font_px": 26,
+          "max_lines": 2,
+          "max_chars": 77
+        },
+        "cta": {
+          "x": 64,
+          "y": 478,
+          "w": null,
+          "h": 56,
+          "font_px": 20,
+          "padding_x": 23,
+          "radius": 6
+        },
+        "footnote": {
+          "x": 64,
+          "y": 552,
+          "w": 536,
+          "h": 20,
+          "font_px": 15,
+          "max_lines": 1,
+          "max_chars": 68
+        },
+        "image_area": {
+          "x": 640,
+          "y": 56,
+          "w": 496,
+          "h": 516,
+          "kind": "option-cards",
+          "optional": false
+        }
+      }
+    }
+  },
+  "fixed_copy": {
+    "headline_default": "Same platform. Same dashboard. Same catalog.",
+    "headline_line_breaks": "One sentence per line, in every format.",
+    "body_default": "Process Now or Easy Pay Direct. Your choice."
+  }
+}

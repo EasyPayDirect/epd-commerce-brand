@@ -12,11 +12,11 @@ aliases_incorrect:
   - "the chatbot"
   - "the copilot"
   - "the assistant"
-pillar: Analyze
+capability: Analyze
 status: shipped
 proper_noun: true
 category: named_brand_element
-one_liner: "Your secure, in-platform LLM. Chat with your own business data in plain English and get real answers."
+one_liner: "Chat with your data. Let The Professor take action. Ask in plain English, get answers grounded in your numbers, and have The Professor do the work."
 images:
   hero:
     src: assets/epd-commerce-features/the-professor/1-landscape.png
@@ -49,7 +49,7 @@ images:
 
 ## What it is
 
-The Professor is your secure, in-platform LLM, running across every page of EPD Commerce.
+The Professor is a personalized agent inside EPD Commerce, connected to your transaction, gateway, and integration data, and available across every page of the platform.
 
 Ask a question in plain English. Get the answer. No dashboards to build, no SQL to write. The Professor chats with your own business data across products, subscriptions, customers, orders, and revenue.
 
@@ -57,11 +57,13 @@ Ask a question in plain English. Get the answer. No dashboards to build, no SQL 
 
 Curated starter prompts, suggested follow-up actions, and voice-to-text input make it fast to use. Error recovery keeps a conversation on track when a question needs a second pass.
 
-The Professor already spins up subscription templates from natural language, for example, "Subscribe Bob to the monthly coaching package, bill on the 5th," and handles a growing set of agentic tasks so you can run more of your business by conversation.
+Explore transactions, declines, churn, and recovery conversationally, and get answers that cite the underlying records.
+
+The Professor also takes action. It can create products and subscriptions, charge customers, and configure revenue recovery from a plain-English request, for example, "Subscribe Bob to the monthly coaching package, bill on the 5th."
 
 ## How to talk about it
 
 - Always capitalize the name: **The Professor**. Never "the professor" mid-sentence, never "Professor" without "The," never "our AI."
 - Always singular. There is one Professor, not many.
-- Describe it as your **secure in-platform LLM**. Not "a chatbot." Not "a copilot." Not "an assistant."
-- Attribute agentic capabilities to The Professor specifically. Example: "The Professor spins up subscription templates from natural language."
+- Describe it as a **personalized agent connected to your data**. Not "a chatbot." Not "a copilot." Not "an assistant."
+- Attribute agentic capabilities to The Professor specifically. Example: "The Professor creates a subscription from a plain-English request."

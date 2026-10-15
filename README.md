@@ -6,31 +6,39 @@ EPD Commerce is a separate brand from Easy Pay Direct. The [Easy Pay Direct bran
 
 ## Start here
 
-- **AI agents and design tools:** read [AGENTS.md](AGENTS.md).
-- **Machine-readable manifest:** [.well-known/brand-assets.json](.well-known/brand-assets.json).
-- **Human-readable guidelines:** [brand-guidelines/](brand-guidelines/).
-- **Feature copy:** [messaging-kit/](messaging-kit/).
+- **AI agents and the design studio:** read [AGENTS.md](AGENTS.md).
+- **Names:** [data/names.json](data/names.json). **Claims:** [data/claims.json](data/claims.json).
+- **Tokens, components, and assets:** [.well-known/brand-assets.json](.well-known/brand-assets.json).
+- **Studio templates:** [templates/](templates/).
+- **Guidelines:** [brand-guidelines/](brand-guidelines/). **Copy:** [messaging-kit/](messaging-kit/).
 
 ## Structure
 
 ```
+AGENTS.md                      Start here (points to everything below)
+data/
+  names.json                   Authoritative names and never-use lists
+  claims.json                  Approved numbers, attribution, status, review dates
 .well-known/
-  brand-assets.json          Machine-readable manifest of colors, fonts, logos, motif, taglines
-AGENTS.md                    Quick-start instructions for AI agents
-brand-guidelines/            7 sections of the styled brand guide, as markdown
-  01-brand-at-a-glance.md
+  brand-assets.json            Tokens, components, asset library with partner-use status
+templates/                     Studio template specs, 5 families x story, square, landscape
+  build.py, preview.py         Generate specs and review previews
+  previews/
+brand-guidelines/
+  01-brand-at-a-glance.md      Messaging hierarchy and lines
   02-logo-system.md
-  03-pillars-naming.md
-  04-color.md
-  05-typography.md
+  03-capabilities.md
+  04-color.md                  Colors, dark surfaces, buttons, shadows
+  05-typography.md             Type by component and by graphic format
   06-voice-and-copy.md
-  07-how-to-talk-about-features.md
-messaging-kit/               Feature and pillar copy (updates independently of brand guide)
-  pillars/
-  features/
+  07-how-to-talk-about-features.md   Naming and release status
+messaging-kit/
+  payment-options.md           Process Now and Easy Pay Direct
+  capabilities/                Transact, React, Analyze, Create
+  features/                    One file per named feature
 assets/
-  logos/                     Horizontal and stacked lockups in SVG and PNG
-  motif/                     Cascading diamond motif in SVG and PNG
+  README.md                    Usage, backgrounds, cropping, partner use for every asset
+  logos/  payment-methods/  diagrams/  backgrounds/  motif/  epd-commerce-features/
 ```
 
 ## Using this repo with an AI agent

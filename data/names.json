@@ -1,0 +1,139 @@
+{
+  "_about": "The single authoritative list of names for EPD Commerce. Every other file in this repo points here instead of repeating definitions. If a name is not in this file, do not invent one. Use 'canonical' exactly as written, including capitalization. Replace anything in 'never' with 'canonical'.",
+  "updated": "2026-10-15",
+
+  "brands": [
+    {
+      "canonical": "EPD Commerce",
+      "role": "The commerce platform. Products, checkout, subscriptions, reporting, recovery, and agentic commerce.",
+      "never": ["EPD commerce", "Epd Commerce", "EPDC (in customer-facing copy)", "EPD (alone)", "epd-commerce"],
+      "notes": "EPDC is acceptable only in tight UI labels or metadata. EPD Commerce is a DBA of Easy Pay Direct LLC."
+    },
+    {
+      "canonical": "Easy Pay Direct",
+      "role": "The payment processor and parent company. Also the name of the fully underwritten processing option inside EPD Commerce.",
+      "never": ["EPD (as shorthand for Easy Pay Direct)", "EasyPay Direct", "Easy Pay"],
+      "notes": "Never write 'EPD' alone to mean Easy Pay Direct. EPD Commerce and Easy Pay Direct are separate brands."
+    }
+  ],
+
+  "processing_options": [
+    {
+      "canonical": "Process Now",
+      "role": "Auto-boarded processing option for low-risk, lower-volume businesses.",
+      "never": ["ProcessNow", "Process-Now", "Near-instant approval rail (as a name)", "the starter rail"],
+      "notes": "Always name it 'Process Now' when the option is referenced. Descriptions like 'near-instant approval' may follow the name, not replace it."
+    },
+    {
+      "canonical": "Easy Pay Direct",
+      "role": "Fully underwritten merchant account option with white-glove service.",
+      "never": ["Merchant account (as the name of the option)", "the EPD rail", "the pro rail"],
+      "notes": "When comparing the two options, name it 'Easy Pay Direct'. 'Merchant account' is a description, not the option name."
+    }
+  ],
+
+  "approved_terms": [
+    {
+      "canonical": "processing rail",
+      "scope": "EPD Commerce only",
+      "meaning": "The merchant account arrangement behind a merchant's payments. Process Now or Easy Pay Direct.",
+      "notes": "Approved for EPD Commerce materials. Do not carry 'rail' into Easy Pay Direct merchant communications, which follow the Easy Pay Direct white label framework."
+    },
+    {
+      "canonical": "payment method",
+      "scope": "both brands",
+      "meaning": "What the buyer uses at checkout: cards, Apple Pay, Google Pay, PayPal, Venmo, ACH, buy now, pay later.",
+      "notes": "Never confuse a processing rail with a payment method. Every listed payment method is available on both rails."
+    },
+    {
+      "canonical": "agentic commerce",
+      "scope": "both brands",
+      "meaning": "Shopping in which an AI agent acts on a person's behalf within the authority that person grants.",
+      "notes": "Lowercase in running text. Capitalize only at the start of a sentence or in a title."
+    },
+    {
+      "canonical": "buy now, pay later",
+      "scope": "both brands",
+      "meaning": "Installment payment methods at the cart.",
+      "notes": "Spell out on first use. BNPL is acceptable after that or in tight labels."
+    }
+  ],
+
+  "capabilities": [
+    { "canonical": "Transact", "order": 1 },
+    { "canonical": "React", "order": 2 },
+    { "canonical": "Analyze", "order": 3 },
+    { "canonical": "Create", "order": 4 }
+  ],
+  "capabilities_rule": "Approved only with an explanation next to them. Never show a capability name on its own as a label or eyebrow without the one-line promise and supporting copy from messaging-kit/capabilities/. Order is always Transact, React, Analyze, Create (payments first).",
+
+  "features": [
+    {
+      "canonical": "The Professor",
+      "slug": "the-professor",
+      "capability": "Analyze",
+      "never": ["The Data Professor", "Data Professor", "the professor (mid-sentence)", "Professor (without 'The')", "Merchant Data LLM", "our AI", "the chatbot", "the copilot", "the assistant"]
+    },
+    {
+      "canonical": "Revenue Recovery",
+      "slug": "revenue-recovery",
+      "capability": "React",
+      "never": ["revenue recovery (mid-sentence)", "payment recovery", "dunning (in customer-facing copy)"]
+    },
+    {
+      "canonical": "Recovery Templates",
+      "slug": "revenue-recovery",
+      "capability": "React",
+      "never": ["recovery playbooks", "recovery strategies (as the feature name)"]
+    },
+    {
+      "canonical": "Order Rescue",
+      "slug": "revenue-recovery",
+      "capability": "React",
+      "never": ["order rescue (mid-sentence)", "checkout recovery"]
+    },
+    {
+      "canonical": "Optimized AI Strategy",
+      "slug": "revenue-recovery",
+      "capability": "React",
+      "never": ["AI strategy", "smart routing (for this toggle)"]
+    },
+    {
+      "canonical": "Retry & Communication Logic",
+      "slug": "revenue-recovery",
+      "capability": "React",
+      "never": ["retry settings (as the feature name)"]
+    },
+    {
+      "canonical": "Billing Notifications",
+      "slug": "revenue-recovery",
+      "capability": "React",
+      "never": ["billing emails (as the feature name)"]
+    },
+    {
+      "canonical": "Email Templates",
+      "slug": "revenue-recovery",
+      "capability": "React",
+      "never": []
+    },
+    {
+      "canonical": "Custom Fields",
+      "slug": "custom-fields",
+      "capability": "Create",
+      "never": ["custom fields (mid-sentence)", "product attributes"]
+    },
+    {
+      "canonical": "AI Product Landing Pages",
+      "slug": "ai-product-landing-pages",
+      "capability": "Create",
+      "never": ["AI landing pages (as the feature name)", "AI-generated landing pages"],
+      "notes": "The site also describes these as 'one-click landing pages' and 'AI-optimized landing pages'. Those are approved descriptions, not alternate names."
+    },
+    {
+      "canonical": "Easy Charge",
+      "slug": null,
+      "capability": "Transact",
+      "never": ["EasyCharge", "easy charge"]
+    }
+  ]
+}

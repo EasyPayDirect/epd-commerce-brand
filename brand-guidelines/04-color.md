@@ -1,79 +1,94 @@
-# 04 Color
+# 04 Color, backgrounds, and buttons
 
-Light-first. Blue-and-white monochrome with pale blue-gray as the only neutral.
+Navy, white, and blue. Values below are measured from the live epd.com site. Machine-readable tokens are in `.well-known/brand-assets.json`.
 
-## Palette by job
+## Page and surfaces
 
-### Text on light
-
-| Role | Hex | Use |
+| Role | Value | Use |
 |---|---|---|
-| Heading | `#0E1422` | Headlines on light backgrounds |
-| Body | `#4A5878` | Default body copy |
-| Muted | `#64748B` | Secondary text, captions |
-
-### Backgrounds and surfaces
-
-| Role | Hex | Use |
-|---|---|---|
-| White | `#FFFFFF` | Primary section background |
-| Pale | `#EBEDF6` | Alternating section background |
-| Tint | `#F5F7FC` | Card interiors, subtle fills |
-
-### Links and interaction
-
-| Role | Hex | Use |
-|---|---|---|
-| Blue 700 | `#0056BB` | Links, eyebrows, tertiary text links |
-| Blue 600 | `#006EE8` | Hover state, primary CTA fill |
-
-### Primary CTA
-
-| Role | Hex | Use |
-|---|---|---|
-| CTA fill | `#0056BB` | Primary CTA button background |
-| CTA text | `#D1D8E7` | Primary CTA button text (soft off-white, never pure white) |
-
-### Hero and dark CTA panels
-
-| Role | Hex | Use |
-|---|---|---|
-| Navy 1 | `#00193B` | Top of hero gradient |
-| Navy 2 | `#000914` | Bottom of hero gradient (near-black) |
-| Band 1 | `#003C7E` | Mid-tone in gradients, Easy Pay Direct brand navy |
-| Off-white | `#D1D8E7` | Text on dark, never pure white |
-| Muted on dark | `#8FA0BF` | Secondary text on dark |
-
-### Borders and dividers
-
-| Role | Hex | Use |
-|---|---|---|
+| Page | `#FFFFFF` | The page itself is always white |
+| Pale | `#EBEDF6` | Light section or card fill |
+| Tint | `#F5F7FC` | Subtle card interiors |
 | Border | `#E2E8F0` | Card edges, table rules |
-| Subtle | `#DADCDF` | Lower-emphasis borders |
 
-### Positive delta (in-product only)
+## Dark sections
+
+Dark sections are **rounded panels on the white page**, not full-bleed bands that fade into white.
+
+| Token | Value |
+|---|---|
+| Dark gradient | `linear-gradient(100deg, #002B55 0%, #001D3B 55%, #000E20 100%)` |
+| Optional highlight | `radial-gradient(60% 80% at 78% 45%, rgba(40,120,220,.28), transparent 70%)` layered on top |
+| Panel radius | 20px |
+| Panel inset | 24 to 34px from the page edge on desktop |
+
+Rules:
+
+- Never fade a dark section to white. The old `#003C7E → #6A9BD1 → #FFFFFF` hero gradient is retired.
+- The highlight is optional and sits behind imagery or diagrams, never behind body text.
+- For graphics, use the ready-made files in `assets/backgrounds/`.
+
+## Text colors
+
+| Role | On light | On dark |
+|---|---|---|
+| Headline | `#000000` to `#0E1422` | `#FFFFFF` |
+| Headline accent (second line) | `#0056BB` | `#8DCAFF` |
+| Body | `#4A5878` | `#D1D8E7` |
+| Strong body | `#0E1422` | `#EBEDF6` |
+| Eyebrow | `#0056BB` | `#87C5FF` |
+| Muted | `#64748B` | `#8FA0BF` |
+
+## Blues
 
 | Role | Hex | Use |
 |---|---|---|
-| Up | `#0E9F5A` | Positive delta arrows and text |
-| Up background | `#E9FBEF` | Positive delta pill background |
+| Button blue | `#00499A` | Primary button fill on light, primary button text on dark, secondary button outline on light |
+| Link blue | `#0056BB` | Text links, eyebrows, link CTAs |
+| Link hover / brand navy | `#003C7E` | Hover state for links |
+| Sky accent | `#8DCAFF` / `#87C5FF` | Headline accents and eyebrows on dark only |
 
-## Pillar accents
+## Buttons
 
-Each pillar has a small accent color used for pill labels, eyebrows, and thin accents only. Never as a large surface fill.
+All buttons use DM Mono 500, uppercase, 14px, 0.42px letter-spacing, and a 4px radius.
 
-| Pillar | Hex |
+| Button | On light | On dark |
+|---|---|---|
+| **Primary** | `#00499A` fill, white text | White fill, `#00499A` text |
+| **Secondary** | Transparent, 1px `#00499A` outline, `#00499A` text | Transparent, 1px white outline, white text |
+| **Text link CTA** | `#0056BB` text, hover `#003C7E`, with → | `#87C5FF` text, with → |
+| **Nav CTA** | Not used | Outline style inside the dark nav pill ("GET ACCESS") |
+
+Rules:
+
+- One primary button per view. A secondary may sit next to it.
+- No pill-shaped (fully rounded) buttons. No gradient fills.
+- Known site inconsistency: the beta form submit uses `#0056BB` with an 8px radius. The standard is `#00499A` with 4px.
+
+## Shadows
+
+Shadows are used selectively, not banned.
+
+| Use | Value |
 |---|---|
-| Create | `#0056BB` |
-| Analyze | `#7C3AED` |
-| React | `#EA580C` |
-| Transact | `#0E9F5A` |
+| Elevated cards and diagrams on light | `0 24px 60px -24px rgba(0,30,80,.35), 0 6px 20px -10px rgba(0,30,80,.18)` |
+| Small cards on light | `0 8px 24px -14px rgba(20,30,60,.18)` |
+| Nav pill | Soft dark shadow under the pill |
 
-## Rules
+Never use shadows on text or logos. Never use glows, bevels, or colored outer glows.
 
-- White is the primary section background. Pale blue-gray `#EBEDF6` is the only neutral tint. Sections alternate between them.
-- Deep navy `#00193B` to `#000914` gradient is reserved for the hero band and dark CTA panels. Never use it as a general background.
-- Blue `#0056BB` is the primary accent everywhere. Bright blue `#006EE8` is the CTA button color and hover state.
-- Green is semantic only. It appears inside the product to signal positive movement (revenue up, approval rate up) or success states. Never on marketing pages, ads, emails, or any brand surface as a general accent.
-- Pillar accent colors (Create blue, Analyze purple, React orange, Transact emerald) are used only for pill labels and eyebrows. Never as large fills.
-- No glow effects, no drop shadows, no gradients outside the blue family.
+## Semantic colors (in-product and diagrams only)
+
+| Role | Hex | Use |
+|---|---|---|
+| Status green | `#3DDC73` | "Ready," "live," and success dots in product UI and diagrams |
+| Up delta | `#0E9F5A` | Positive change in charts |
+| Error | `#B91C1C` | Errors |
+
+Green never appears as a general marketing accent.
+
+## Retired
+
+- Capability accent colors (purple `#7C3AED`, orange `#EA580C`, emerald `#0E9F5A` as a capability color). Do not use in marketing or partner graphics.
+- `#006EE8` as the CTA color. Use `#00499A`.
+- `#D1D8E7` as primary button text. Primary buttons use white text on light and `#00499A` text on dark.

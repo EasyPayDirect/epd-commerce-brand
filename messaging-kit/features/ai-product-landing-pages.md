@@ -8,10 +8,10 @@ aliases_incorrect:
   - "AI-generated landing pages"
   - "AI landing pages"
   - "product landing pages"
-pillar: Create
+capability: Create
 status: shipped
 proper_noun: true
-one_liner: "Generate a full product landing page from a product description. Copy, layout, and imagery, ready to ship."
+one_liner: "AI-optimized landing pages in one click, with schema markup, llms.txt, and structured data, so people and AI shopping tools can understand your catalog."
 images:
   hero:
     src: assets/epd-commerce-features/ai-product-landing-pages/1-landscape.png
@@ -44,6 +44,8 @@ AI Product Landing Pages generates a complete landing page from a product descri
 ## How it works
 
 Give AI Product Landing Pages a product description. It generates a full landing page with sections in the right order, sample copy for each, and layout placeholders for imagery. Every element is editable. When it's ready, publish to your storefront.
+
+Every page includes schema markup, llms.txt, and structured data, so people and AI shopping tools can understand the product. This makes products easier for AI systems to read. It does not guarantee placement or ranking in any AI assistant.
 
 ## How to talk about it
 
