@@ -8,8 +8,9 @@ Partner use: **approved** = partners may use inside studio templates. **pending*
 |---|---|---|---|---|
 | `logos/epdc-horizontal-white.png` | Primary lockup on dark (transparent) | Dark | Never | approved |
 | `logos/epdc-horizontal-navy-on-light.png` | Primary lockup on light | White, pale | Never | approved |
+| `logos/epdc-horizontal-navy.svg` | Primary lockup on light, vector | White, pale | Never | approved |
 | `logos/epdc-horizontal-on-navy.png` | Lockup on a solid navy tile | Any, as a tile | Never | approved |
-| `logos/epdc-horizontal.svg` | Source vector | Dark | Never | approved |
+| `logos/epdc-horizontal.svg` | Primary lockup on dark, vector | Dark | Never | approved |
 | `logos/epdc-stacked.png` | Square and vertical spaces | White, pale | Never | approved |
 | `logos/epdc-mark-on-dark.svg` | Diamond mark alone (white diamond) | Dark | Never | approved |
 | `logos/epdc-mark-on-light.svg` | Diamond mark alone (navy diamond) | White, pale | Never | approved |

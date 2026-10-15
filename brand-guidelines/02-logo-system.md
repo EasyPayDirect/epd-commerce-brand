@@ -17,8 +17,9 @@ The horizontal lockup is the default. Diamond mark with white "EPD" inside, ital
 |---|---|---|
 | `assets/logos/epdc-horizontal-white.png` | Primary lockup on dark. Transparent background. | Dark gradient, navy, dark photos |
 | `assets/logos/epdc-horizontal-navy-on-light.png` | Primary lockup on light | White, pale, tint |
+| `assets/logos/epdc-horizontal-navy.svg` | Primary lockup on light, vector. Use for print and large sizes. | White, pale, tint |
 | `assets/logos/epdc-horizontal-on-navy.png` | Lockup on a solid navy tile (not transparent) | Use only where a solid tile is wanted |
-| `assets/logos/epdc-horizontal.svg` | Source vector | Any, for print and large sizes |
+| `assets/logos/epdc-horizontal.svg` | Primary lockup on dark, vector. Use for print and large sizes. | Dark |
 | `assets/logos/epdc-stacked.png` | Square and narrow vertical spaces | Light |
 | `assets/logos/epdc-mark-on-dark.svg` | Standalone diamond mark: white diamond, navy EPD | Dark |
 | `assets/logos/epdc-mark-on-light.svg` | Standalone diamond mark: navy diamond, white EPD | Light |

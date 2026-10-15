@@ -227,6 +227,17 @@
         "partner_use": "approved"
       },
       {
+        "path": "assets/logos/epdc-horizontal-navy.svg",
+        "use": "Primary lockup on light. Vector. Navy #213E7A, transparent background.",
+        "backgrounds": [
+          "white",
+          "pale",
+          "tint"
+        ],
+        "cropping": "Never crop.",
+        "partner_use": "approved"
+      },
+      {
         "path": "assets/logos/epdc-horizontal-on-navy.png",
         "use": "Lockup on a solid navy tile.",
         "backgrounds": [
@@ -237,7 +248,7 @@
       },
       {
         "path": "assets/logos/epdc-horizontal.svg",
-        "use": "Source vector for print and large sizes.",
+        "use": "Primary lockup on dark. Vector, white with navy EPD.",
         "backgrounds": [
           "dark"
         ],
