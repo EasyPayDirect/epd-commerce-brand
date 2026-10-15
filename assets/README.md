@@ -16,8 +16,9 @@ Partner use: **approved** = partners may use inside studio templates. **pending*
 | `logos/process-now-white.png` | Process Now, only where the two options are explained | Dark | Never | approved |
 | `logos/easy-pay-direct-white.png` | Easy Pay Direct, only where the two options are explained | Dark | Never | approved |
 | `payment-methods/` | Ways buyers can pay. See `SOURCES.md`. | Dark (white), light (brand color) | Never | pending |
-| `diagrams/foundation-diagram.png` | One platform over two processing options | Dark | Never through a card | pending |
-| `diagrams/foundation-section-site-capture.png` | Reference capture of the site section | n/a | n/a | no |
+| `diagrams/foundation-diagram.png` | One platform over Process Now and Easy Pay Direct. Qualifier required. | Dark | Never through a card | approved |
+| `diagrams/foundation-section.png` | Full Foundation section artwork. Qualifier required. | n/a | Use whole | approved |
+| `diagrams/foundation-section.svg` | Source vector (needs General Sans and DM Mono installed) | n/a | n/a | no |
 | `epd-commerce-features/<slug>/` | Product screenshots | Dark, white | Whole panels only, never through text or numbers | approved |
 | `backgrounds/dark-gradient-*.png` | Template backgrounds, story, square, landscape | n/a | Native size | approved |
 | `backgrounds/dark-gradient-highlight-*.png` | Same, with soft blue highlight behind imagery | n/a | Native size | approved |
@@ -25,6 +26,6 @@ Partner use: **approved** = partners may use inside studio templates. **pending*
 
 ## Notes
 
-- The Foundation diagram was captured from epd.com on 2026-10-15. Its left card says "Near-instant approval" instead of naming Process Now. Fix the site, recapture, then approve it for partners.
+- The Foundation artwork is marketing artwork, not a product screenshot. It shows "Often same day", so any graphic using it must include "All applications subject to review. Approval is not guaranteed."
 - Backgrounds are rendered from the site's dark section CSS: `linear-gradient(100deg, #002B55 0%, #001D3B 55%, #000E20 100%)`, with the highlight variant adding `radial-gradient(60% 80% at 78% 45%, rgba(40,120,220,.28), transparent 70%)`.
 - Numbers in screenshots are sample data. Never reuse them as claims.

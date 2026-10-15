@@ -96,7 +96,7 @@ FAMILIES = {
                        "rules": ["Two equal cards, Process Now first. Each card: option logo or name, one fit line, one timing line.",
                                  "Card copy is fixed. Process Now: 'Low-risk, lower-volume businesses. Approval is often same day.' Easy Pay Direct: 'Full underwriting and white-glove service. Typically 1 to 3 days.'",
                                  "Card fill rgba(255,255,255,.06), 1px rgba(141,202,255,.25) border, 16px radius.",
-                                 "The Foundation diagram (assets/diagrams/foundation-diagram.png) may replace the cards in landscape only, once approved for partner use."]},
+                                 "The Foundation diagram (assets/diagrams/foundation-diagram.png) may replace the cards in landscape. The qualifier still appears."]},
         "illustration": False,
         "qualifier": "always required",
         "fixed_copy": {"headline_default": "Same platform. Same dashboard. Same catalog.",

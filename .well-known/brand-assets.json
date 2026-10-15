@@ -313,22 +313,34 @@
     "diagrams": [
       {
         "path": "assets/diagrams/foundation-diagram.png",
-        "use": "Foundation diagram: one platform layer over two processing options.",
+        "use": "Foundation diagram: one platform layer over Process Now and Easy Pay Direct.",
         "backgrounds": [
           "dark"
         ],
         "cropping": "Use as is. Never crop through a card.",
-        "partner_use": "pending",
-        "note": "Captured from the epd.com Foundation section. The left card says 'Near-instant approval' instead of naming Process Now. Fix on the site, then recapture before partner use."
+        "partner_use": "approved",
+        "requires_qualifier": true,
+        "note": "Marketing artwork, not a product screenshot. Shows 'Often same day', so the approval qualifier from data/claims.json must appear in the same graphic."
       },
       {
-        "path": "assets/diagrams/foundation-section-site-capture.png",
-        "use": "Full Foundation section, for reference.",
+        "path": "assets/diagrams/foundation-section.png",
+        "use": "Full Foundation section artwork with headline, copy, and logo (1600x1000).",
         "backgrounds": [
           "n/a"
         ],
-        "cropping": "Reference only.",
-        "partner_use": "no"
+        "cropping": "Use whole, or use foundation-diagram.png for the diagram alone.",
+        "partner_use": "approved",
+        "requires_qualifier": true
+      },
+      {
+        "path": "assets/diagrams/foundation-section.svg",
+        "use": "Source vector for the Foundation section.",
+        "backgrounds": [
+          "n/a"
+        ],
+        "cropping": "n/a",
+        "partner_use": "no",
+        "note": "Text renders correctly only with General Sans and DM Mono installed. Use the PNG for predictable output."
       }
     ],
     "screenshots": {
