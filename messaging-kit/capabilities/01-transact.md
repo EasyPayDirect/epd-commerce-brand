@@ -20,5 +20,5 @@ Processing is the foundation of EPD Commerce. Businesses can take card payments 
 ## Notes for writers
 
 - Full detail on the two processing options lives in [../payment-options.md](../payment-options.md). Use that file for any copy that compares them.
-- Process Now approval timing and the $25K figure need their qualifiers. See `data/claims.json`.
+- Keep "often" and "generally" with Process Now timing and the $25K figure. See `data/claims.json`.
 - Metered billing is in beta. Always label it "(beta)".

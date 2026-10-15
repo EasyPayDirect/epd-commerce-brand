@@ -28,6 +28,18 @@ Rules:
 - The highlight is optional and sits behind imagery or diagrams, never behind body text.
 - For graphics, use the ready-made files in `assets/backgrounds/`.
 
+## Social gradient
+
+Brighter gradient used on social and partner graphics (see `assets/examples/`).
+
+| Token | Value |
+|---|---|
+| Social gradient | `linear-gradient(135deg, #004A9C 0%, #003C7E 45%, #001D3B 100%)` (top left to bottom right) |
+| Glow | `radial-gradient(circle at 90% 5%, rgba(0,104,222,.75), rgba(0,87,194,0) 75%)` layered on top |
+| Files | `assets/backgrounds/social-gradient-{story,square,landscape}.png` |
+
+White cards (`#FFFFFF`, 32px radius at story size) can sit on the social gradient to hold detailed content.
+
 ## Text colors
 
 | Role | On light | On dark |

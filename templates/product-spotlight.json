@@ -11,6 +11,11 @@
       "square": "assets/backgrounds/dark-gradient-square.png",
       "landscape": "assets/backgrounds/dark-gradient-landscape.png"
     },
+    "social-gradient": {
+      "story": "assets/backgrounds/social-gradient-story.png",
+      "square": "assets/backgrounds/social-gradient-square.png",
+      "landscape": "assets/backgrounds/social-gradient-landscape.png"
+    },
     "white": "#FFFFFF"
   },
   "type": {
@@ -35,11 +40,6 @@
       "LEARN MORE"
     ],
     "rule": "Add labels only with marketing approval."
-  },
-  "qualifier": {
-    "when": "not required",
-    "text": "All applications subject to review. Approval is not guaranteed.",
-    "slot": "footnote"
   },
   "image_area": {
     "kind": "screenshot",

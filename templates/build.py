@@ -28,7 +28,6 @@ GLYPH = {"eyebrow": 0.74, "headline": 0.48, "body": 0.47, "cta": 0.66, "footnote
 
 CTA_LABELS = ["GET ACCESS", "SEE PAYMENT OPTIONS", "LEARN MORE"]
 PARTNER_CTA_LABELS = ["GET STARTED", "GET ACCESS", "LEARN MORE"]
-QUALIFIER = "All applications subject to review. Approval is not guaranteed."
 
 COMMON_AI = {
     "may": [
@@ -49,14 +48,14 @@ ILLUSTRATION_RULES = [
     "Optional. Generated only inside the illustration area.",
     "Abstract or scene imagery only. No text, numbers, logos, payment-method marks, card brands, UI, dashboards, or screenshots.",
     "Navy, white, and blue palette. No people facing the camera with readable faces in partner graphics.",
-    "Never overlaps the headline, body, CTA, logo, or qualifier.",
+    "Never overlaps the headline, body, CTA, or logo.",
 ]
 
 FAMILIES = {
     "payments-benefit": {
         "title": "Payments benefit",
         "purpose": "One payment benefit for a business owner: accept payments on an existing website, the ways buyers can pay, or fast setup.",
-        "background": ["dark-gradient", "dark-gradient-highlight"],
+        "background": ["dark-gradient", "dark-gradient-highlight", "social-gradient"],
         "lines": {"headline": {"story": 4, "square": 3, "landscape": 3}, "body": {"story": 3, "square": 2, "landscape": 2}},
         "image_area": {"kind": "payment-methods-row", "source": "assets/payment-methods/",
                        "rules": ["Real marks only, from assets/payment-methods/. Never generated.",
@@ -64,7 +63,7 @@ FAMILIES = {
                                  "Show 4 to 8 methods. Never alter, recolor beyond each brand's allowed single-color version, or crop a mark.",
                                  "Partner use pending official brand-owner marks. See assets/payment-methods/SOURCES.md."]},
         "illustration": False,
-        "qualifier": "required if approval timing or the $25K figure appears",
+        "footnote": False,
         "copy_sources": ["messaging-kit/capabilities/01-transact.md", "messaging-kit/payment-options.md"],
         "example": {"eyebrow": "ACCEPT PAYMENTS", "headline": "Take payments on the website you already have.",
                     "body": "Cards, Apple Pay, Google Pay, PayPal, Venmo, ACH, and buy now, pay later.", "cta": "GET ACCESS"},
@@ -72,7 +71,7 @@ FAMILIES = {
     "product-spotlight": {
         "title": "Product spotlight",
         "purpose": "One named feature, what it does, and a real product screenshot.",
-        "background": ["dark-gradient", "white"],
+        "background": ["dark-gradient", "social-gradient", "white"],
         "lines": {"headline": {"story": 3, "square": 2, "landscape": 3}, "body": {"story": 2, "square": 1, "landscape": 2}},
         "image_area": {"kind": "screenshot", "source": "assets/epd-commerce-features/<slug>/",
                        "rules": ["Real screenshot from the feature's images block only. Never generated or redrawn.",
@@ -80,7 +79,7 @@ FAMILIES = {
                                  "12px corner radius (story and square), 8px (landscape). Shadow allowed: elevated card shadow from 04-color.md.",
                                  "Numbers in screenshots are sample data. Never repeat them in the headline or body."]},
         "illustration": False,
-        "qualifier": "not required",
+        "footnote": False,
         "copy_sources": ["messaging-kit/features/<slug>.md", "data/names.json"],
         "rules_extra": ["Eyebrow is the feature name exactly as in data/names.json, for example THE PROFESSOR.",
                         "Only features with status shipped or beta. Beta features show (beta) in the body."],
@@ -89,16 +88,16 @@ FAMILIES = {
     },
     "two-payment-options": {
         "title": "Two payment options",
-        "purpose": "Explain Process Now and Easy Pay Direct side by side, built on the Foundation section.",
-        "background": ["dark-gradient-highlight"],
+        "purpose": "Explain Process Now and Easy Pay Direct side by side, built on the Foundation section. For a single option, see assets/examples/ stories.",
+        "background": ["dark-gradient-highlight", "social-gradient"],
         "lines": {"headline": {"story": 3, "square": 3, "landscape": 3}, "body": {"story": 2, "square": 1, "landscape": 2}},
         "image_area": {"kind": "option-cards", "source": "assets/logos/process-now-white.png, assets/logos/easy-pay-direct-white.png",
                        "rules": ["Two equal cards, Process Now first. Each card: option logo or name, one fit line, one timing line.",
                                  "Card copy is fixed. Process Now: 'Low-risk, lower-volume businesses. Approval is often same day.' Easy Pay Direct: 'Full underwriting and white-glove service. Typically 1 to 3 days.'",
                                  "Card fill rgba(255,255,255,.06), 1px rgba(141,202,255,.25) border, 16px radius.",
-                                 "The Foundation diagram (assets/diagrams/foundation-diagram.png) may replace the cards in landscape. The qualifier still appears."]},
+                                 "The Foundation diagram (assets/diagrams/foundation-diagram.png) may replace the cards in landscape."]},
         "illustration": False,
-        "qualifier": "always required",
+        "footnote": False,
         "fixed_copy": {"headline_default": "Same platform. Same dashboard. Same catalog.",
                        "headline_line_breaks": "One sentence per line, in every format.",
                        "body_default": "Process Now or Easy Pay Direct. Your choice."},
@@ -109,12 +108,12 @@ FAMILIES = {
     "problem-solution": {
         "title": "Problem and solution",
         "purpose": "Name a real business problem, then the EPD Commerce answer.",
-        "background": ["dark-gradient", "dark-gradient-highlight"],
+        "background": ["dark-gradient", "dark-gradient-highlight", "social-gradient"],
         "lines": {"headline": {"story": 3, "square": 2, "landscape": 3}, "body": {"story": 3, "square": 2, "landscape": 2}},
         "image_area": {"kind": "illustration", "source": "AI-generated, optional",
                        "rules": ILLUSTRATION_RULES},
         "illustration": True,
-        "qualifier": "required if approval timing or the $25K figure appears",
+        "footnote": False,
         "slots_extra": {"problem": "Replaces the eyebrow: one short problem statement in DM Mono uppercase, sky accent color. Max 40 characters."},
         "copy_sources": ["messaging-kit/capabilities/", "messaging-kit/features/"],
         "example": {"eyebrow": "FAILED PAYMENTS COST YOU", "headline": "Recover failed payments automatically.",
@@ -123,12 +122,12 @@ FAMILIES = {
     "partner-introduction": {
         "title": "Partner introduction",
         "purpose": "A partner introduces EPD Commerce to their audience with one partner link.",
-        "background": ["dark-gradient", "dark-gradient-highlight"],
+        "background": ["dark-gradient", "dark-gradient-highlight", "social-gradient"],
         "lines": {"headline": {"story": 3, "square": 2, "landscape": 3}, "body": {"story": 3, "square": 2, "landscape": 2}},
         "image_area": {"kind": "illustration", "source": "AI-generated, optional",
                        "rules": ILLUSTRATION_RULES},
         "illustration": True,
-        "qualifier": "always required",
+        "footnote": False,
         "co_brand": {"rules": ["Partner logo left, 1px rgba(255,255,255,.35) vertical divider, EPD Commerce logo right.",
                                "Partner logo height never exceeds the EPD Commerce logo height. Partner supplies a white or single-color version.",
                                "No 'powered by' or 'official partner' language unless approved.",
@@ -163,7 +162,7 @@ def build(fam_key, fam, fkey, fmt):
         slots["logo"] = {"x": mx, "y": top, "w": logo_w, "h": fmt["logo_h"], "asset": "assets/logos/epdc-horizontal-white.png"}
 
     fn_lines = 2 if fkey != "landscape" else 1
-    has_fn = fam["qualifier"] != "not required"
+    has_fn = fam["footnote"]
     if fmt["layout"] == "stack":
         colw = W - 2 * mx
         y = top + fmt["logo_h"] + gap * 2
@@ -218,7 +217,6 @@ def main():
             "cta": {"treatment": "Primary button. On dark: white fill, #00499A text. On light: #00499A fill, white text. No shadow, no gradient, no pill shape.",
                     "approved_labels": PARTNER_CTA_LABELS if key == "partner-introduction" else CTA_LABELS,
                     "rule": "Add labels only with marketing approval."},
-            "qualifier": {"when": fam["qualifier"], "text": QUALIFIER, "slot": "footnote"},
             "image_area": fam["image_area"],
             "copy_sources": fam["copy_sources"],
             "ai": COMMON_AI,

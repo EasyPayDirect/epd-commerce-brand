@@ -22,7 +22,7 @@ Use sparingly and only where it fits the audience.
 - Use sentence case in headlines.
 - Name the feature, then say what it does: "Revenue Recovery retries failed subscription payments."
 - Ground claims in specifics, using only approved claims from `data/claims.json`.
-- Keep required qualifiers next to approval timing and volume figures.
+- Keep the soft words in timing and fit claims: "often same day," "typically 1 to 3 days," "generally under $25K."
 - Use commas, periods, or parentheses for pauses.
 - Write numbers as numerals: 12+, $25K, 1 to 3 days.
 
@@ -33,7 +33,7 @@ Use sparingly and only where it fits the audience.
 - Lowercase feature names in body copy, or replace them with "our recovery system" or "our AI."
 - Use hype words: revolutionary, game-changing, supercharge.
 - Use em dashes.
-- Promise approval, approval speed, or AI placement.
+- Say approval is guaranteed, or promise placement in AI assistants.
 - Reuse numbers from demos, dashboards, or screenshots as claims.
 - Name banking partners. Say "one of our banking partners."
 - Say "AI runs your business." Say what a named feature does.

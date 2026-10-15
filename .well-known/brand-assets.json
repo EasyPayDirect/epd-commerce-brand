@@ -76,7 +76,10 @@
       "dark_gradient": "linear-gradient(100deg, #002B55 0%, #001D3B 55%, #000E20 100%)",
       "dark_highlight": "radial-gradient(60% 80% at 78% 45%, rgba(40,120,220,.28), transparent 70%)",
       "dark_panel_radius_px": 20,
-      "rule": "Dark sections are rounded panels on a white page. Never fade to white."
+      "rule": "Dark sections are rounded panels on a white page. Never fade to white.",
+      "social_gradient": "linear-gradient(135deg, #004A9C 0%, #003C7E 45%, #001D3B 100%)",
+      "social_glow": "radial-gradient(circle at 90% 5%, rgba(0,104,222,.75), rgba(0,87,194,0) 75%)",
+      "social_rule": "Brighter gradient for social and partner graphics. White cards may sit on it."
     },
     "shadow": {
       "elevated": "0 24px 60px -24px rgba(0,30,80,.35), 0 6px 20px -10px rgba(0,30,80,.18)",
@@ -319,8 +322,7 @@
         ],
         "cropping": "Use as is. Never crop through a card.",
         "partner_use": "approved",
-        "requires_qualifier": true,
-        "note": "Marketing artwork, not a product screenshot. Shows 'Often same day', so the approval qualifier from data/claims.json must appear in the same graphic."
+        "note": "Marketing artwork, not a product screenshot."
       },
       {
         "path": "assets/diagrams/foundation-section.png",
@@ -329,8 +331,7 @@
           "n/a"
         ],
         "cropping": "Use whole, or use foundation-diagram.png for the diagram alone.",
-        "partner_use": "approved",
-        "requires_qualifier": true
+        "partner_use": "approved"
       },
       {
         "path": "assets/diagrams/foundation-section.svg",
@@ -373,6 +374,15 @@
         ],
         "cropping": "Use at native size.",
         "partner_use": "approved"
+      },
+      {
+        "path": "assets/backgrounds/social-gradient-{story,square,landscape}.png",
+        "use": "Social and partner graphics.",
+        "backgrounds": [
+          "n/a"
+        ],
+        "cropping": "Use at native size.",
+        "partner_use": "approved"
       }
     ],
     "motif": [
@@ -392,6 +402,20 @@
           "dark"
         ],
         "cropping": "May bleed off an edge. Never behind body text.",
+        "partner_use": "approved"
+      }
+    ],
+    "examples": [
+      {
+        "path": "assets/examples/story-process-now.png",
+        "source": "assets/examples/story-process-now.svg",
+        "use": "Finished Process Now story. Reference for the two payment options and payments benefit families.",
+        "partner_use": "approved"
+      },
+      {
+        "path": "assets/examples/story-easy-pay-direct.png",
+        "source": "assets/examples/story-easy-pay-direct.svg",
+        "use": "Finished Easy Pay Direct story. Eyebrow 'MERCHANT ACCOUNTS' is an approved contextual label.",
         "partner_use": "approved"
       }
     ]

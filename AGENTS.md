@@ -5,7 +5,7 @@ Read this first. It points to the files that hold the rules. If two files disagr
 ## Load order
 
 1. `data/names.json`: every brand, option, capability, and feature name, plus never-use lists.
-2. `data/claims.json`: every approved number with attribution, status, and required qualifiers.
+2. `data/claims.json`: every approved number with attribution, status, and review date.
 3. `.well-known/brand-assets.json`: colors, surfaces, components, fonts, and the asset library with partner-use status.
 4. `templates/`: studio template specs (story, square, landscape) for five families.
 5. `messaging-kit/`: approved copy. `payment-options.md`, `capabilities/`, `features/`.
@@ -16,7 +16,7 @@ Read this first. It points to the files that hold the rules. If two files disagr
 1. **Two brands.** EPD Commerce is the platform. Easy Pay Direct is the processor. Never write "EPD" alone to mean Easy Pay Direct.
 2. **Lead with payments.** Accept payments, then the two processing options, then the tools. AI-first lines are for AI-focused audiences only.
 3. **Exact names only.** Use `data/names.json` and the names in the product UI. The Professor, never The Data Professor.
-4. **Approved claims only.** If a number is not approved in `data/claims.json`, do not use it. Keep its attribution and qualifier.
+4. **Approved claims only.** If a number is not approved in `data/claims.json`, do not use it. Keep its attribution.
 5. **No em dashes.** Use commas, periods, or parentheses.
 6. **Sentence case.** DM Mono eyebrows, labels, and buttons are uppercase.
 7. **Never name banking partners.** Say "one of our banking partners."

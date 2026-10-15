@@ -15,6 +15,11 @@
       "story": "assets/backgrounds/dark-gradient-highlight-story.png",
       "square": "assets/backgrounds/dark-gradient-highlight-square.png",
       "landscape": "assets/backgrounds/dark-gradient-highlight-landscape.png"
+    },
+    "social-gradient": {
+      "story": "assets/backgrounds/social-gradient-story.png",
+      "square": "assets/backgrounds/social-gradient-square.png",
+      "landscape": "assets/backgrounds/social-gradient-landscape.png"
     }
   },
   "type": {
@@ -40,11 +45,6 @@
     ],
     "rule": "Add labels only with marketing approval."
   },
-  "qualifier": {
-    "when": "required if approval timing or the $25K figure appears",
-    "text": "All applications subject to review. Approval is not guaranteed.",
-    "slot": "footnote"
-  },
   "image_area": {
     "kind": "illustration",
     "source": "AI-generated, optional",
@@ -52,7 +52,7 @@
       "Optional. Generated only inside the illustration area.",
       "Abstract or scene imagery only. No text, numbers, logos, payment-method marks, card brands, UI, dashboards, or screenshots.",
       "Navy, white, and blue palette. No people facing the camera with readable faces in partner graphics.",
-      "Never overlaps the headline, body, CTA, logo, or qualifier."
+      "Never overlaps the headline, body, CTA, or logo."
     ]
   },
   "copy_sources": [
@@ -130,27 +130,18 @@
           "x": 96,
           "y": 1069,
           "w": 888,
-          "h": 292,
+          "h": 395,
           "kind": "illustration",
           "optional": true
         },
         "cta": {
           "x": 96,
-          "y": 1441,
+          "y": 1544,
           "w": null,
           "h": 96,
           "font_px": 30,
           "padding_x": 40,
           "radius": 8
-        },
-        "footnote": {
-          "x": 96,
-          "y": 1577,
-          "w": 888,
-          "h": 63,
-          "font_px": 24,
-          "max_lines": 2,
-          "max_chars": 140
         }
       }
     },
@@ -204,27 +195,18 @@
           "x": 80,
           "y": 589,
           "w": 920,
-          "h": 195,
+          "h": 275,
           "kind": "illustration",
           "optional": true
         },
         "cta": {
           "x": 80,
-          "y": 840,
+          "y": 920,
           "w": null,
           "h": 80,
           "font_px": 26,
           "padding_x": 33,
           "radius": 8
-        },
-        "footnote": {
-          "x": 80,
-          "y": 948,
-          "w": 920,
-          "h": 52,
-          "font_px": 20,
-          "max_lines": 2,
-          "max_chars": 174
         }
       }
     },
@@ -276,21 +258,12 @@
         },
         "cta": {
           "x": 64,
-          "y": 478,
+          "y": 516,
           "w": null,
           "h": 56,
           "font_px": 20,
           "padding_x": 23,
           "radius": 6
-        },
-        "footnote": {
-          "x": 64,
-          "y": 552,
-          "w": 536,
-          "h": 20,
-          "font_px": 15,
-          "max_lines": 1,
-          "max_chars": 68
         },
         "image_area": {
           "x": 640,

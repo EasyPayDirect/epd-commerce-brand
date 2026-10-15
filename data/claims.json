@@ -7,7 +7,6 @@
     "retired": "Do not use. Kept here so it is not reintroduced."
   },
   "attribution_rule": "Easy Pay Direct track record is not EPD Commerce results. Easy Pay Direct claims must be attributed to Easy Pay Direct (for example 'Powered by Easy Pay Direct' or 'on Easy Pay Direct rails'). Never present them as EPD Commerce outcomes.",
-
   "claims": [
     {
       "id": "epd-years-processing",
@@ -113,18 +112,17 @@
       "source": "epd.com Payment Options page, confirmed by Head of Marketing.",
       "approved_by": "Vince Bitetti, Head of Marketing",
       "last_reviewed": "2026-10-15",
-      "required_qualifier": "Subject to review. Approval is not guaranteed.",
-      "notes": "The site also says 'often within an hour'. Use that only alongside the qualifier."
+      "notes": "Keep 'often'. The site also says 'often within an hour'."
     },
     {
       "id": "epd-approval-time",
-      "display": "Typical approval in 1 to 3 days",
+      "display": "Typically 1 to 3 days",
       "attribution": "Easy Pay Direct",
       "status": "approved",
       "source": "epd.com Payment Options page, confirmed by Head of Marketing.",
       "approved_by": "Vince Bitetti, Head of Marketing",
       "last_reviewed": "2026-10-15",
-      "required_qualifier": "Depends on how quickly documents arrive. Approval is not guaranteed."
+      "notes": "Keep 'typically'. Timing depends on how quickly documents arrive."
     },
     {
       "id": "process-now-volume-fit",
@@ -134,10 +132,9 @@
       "source": "epd.com Payment Options page, confirmed by Head of Marketing.",
       "approved_by": "Vince Bitetti, Head of Marketing",
       "last_reviewed": "2026-10-15",
-      "required_qualifier": "A fit recommendation, not a cutoff."
+      "notes": "A fit recommendation, not a cutoff. Keep 'generally'."
     }
   ],
-
   "never_reuse_as_claims": [
     "Any number shown inside product demos, dashboards, or animated site visuals (for example Revenue Recovered $275K or $329K, Agentic Sales $18,356 or $25,000, Recovery Rate 87.8%). These are sample data and change on each page load.",
     "Any number in a product screenshot, unless that exact number is listed above as approved."

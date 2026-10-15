@@ -146,7 +146,7 @@ for spec_path in sorted(glob.glob(os.path.join(T, "*.json"))):
         # footnote
         if "footnote" in S:
             fn = S["footnote"]; ff = font(GS("Regular"), fn["font_px"])
-            for i, ln in enumerate(wrap(d, spec["qualifier"]["text"], ff, fn["w"], 0)):
+            for i, ln in enumerate(wrap(d, spec.get("footnote_text", ""), ff, fn["w"], 0)):
                 d.text((fn["x"], fn["y"] + i * fn["font_px"] * 1.3), ln, font=ff, fill=(143, 160, 191))
         out = os.path.join(T, "previews", f"{spec['id']}-{fk}.jpg")
         c.convert("RGB").save(out, quality=88, optimize=True); print("wrote", os.path.relpath(out, ROOT))

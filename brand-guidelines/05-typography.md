@@ -36,7 +36,7 @@ Sizes are in px at the template's native size. Template-specific limits are in `
 | Body max lines | 4 | 3 | 2 |
 | Eyebrow (DM Mono 500, 0.14em, uppercase) | 28 | 24 | 18 |
 | CTA (DM Mono 500, 0.04em, uppercase) | 30 | 26 | 20 |
-| Footnote / qualifier (General Sans 400) | 24 | 20 | 15 |
+| Footnote (General Sans 400) | 24 | 20 | 15 |
 | Minimum text size anywhere | 24 | 20 | 15 |
 
 ## Rules

@@ -18,11 +18,11 @@ Specs for the EPD Commerce design studio. Each family comes in three formats:
 | [problem-solution.json](problem-solution.json) | Problem and solution | Optional illustration | Yes |
 | [partner-introduction.json](partner-introduction.json) | Partner introduction | Optional illustration, co-branded logos | Yes |
 
-Previews with example copy are in [previews/](previews/). They are for review, not for publishing.
+Previews with example copy are in [previews/](previews/). They are for review, not for publishing. Finished, approved examples are in [../assets/examples/](../assets/examples/).
 
 ## Who controls what
 
-**The template controls:** logo file and placement, fonts, type sizes, colors, background, layout, spacing, CTA style, and the qualifier.
+**The template controls:** logo file and placement, fonts, type sizes, colors, background, layout, spacing, and CTA style.
 
 **AI may:**
 
@@ -37,7 +37,6 @@ Previews with example copy are in [previews/](previews/). They are for review, n
 
 - `formats.<format>.slots` gives each element's box in px: `x`, `y`, `w`, `h`. Text slots also give `font_px`, `max_lines`, and `max_chars`.
 - `flow`: eyebrow, headline, and body flow top down. Unused lines collapse, and the image area moves up and grows. Logo, CTA, and footnote stay fixed.
-- `qualifier.when` says when the footnote "All applications subject to review. Approval is not guaranteed." must appear.
 - `copy_sources` lists the files AI must draw copy from.
 
 ## Editing

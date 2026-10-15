@@ -2,7 +2,7 @@
   "_generated_by": "templates/build.py. Edit the script, then rerun.",
   "id": "two-payment-options",
   "title": "Two payment options",
-  "purpose": "Explain Process Now and Easy Pay Direct side by side, built on the Foundation section.",
+  "purpose": "Explain Process Now and Easy Pay Direct side by side, built on the Foundation section. For a single option, see assets/examples/ stories.",
   "version": "1.0",
   "updated": "2026-10-15",
   "backgrounds": {
@@ -10,6 +10,11 @@
       "story": "assets/backgrounds/dark-gradient-highlight-story.png",
       "square": "assets/backgrounds/dark-gradient-highlight-square.png",
       "landscape": "assets/backgrounds/dark-gradient-highlight-landscape.png"
+    },
+    "social-gradient": {
+      "story": "assets/backgrounds/social-gradient-story.png",
+      "square": "assets/backgrounds/social-gradient-square.png",
+      "landscape": "assets/backgrounds/social-gradient-landscape.png"
     }
   },
   "type": {
@@ -35,11 +40,6 @@
     ],
     "rule": "Add labels only with marketing approval."
   },
-  "qualifier": {
-    "when": "always required",
-    "text": "All applications subject to review. Approval is not guaranteed.",
-    "slot": "footnote"
-  },
   "image_area": {
     "kind": "option-cards",
     "source": "assets/logos/process-now-white.png, assets/logos/easy-pay-direct-white.png",
@@ -47,7 +47,7 @@
       "Two equal cards, Process Now first. Each card: option logo or name, one fit line, one timing line.",
       "Card copy is fixed. Process Now: 'Low-risk, lower-volume businesses. Approval is often same day.' Easy Pay Direct: 'Full underwriting and white-glove service. Typically 1 to 3 days.'",
       "Card fill rgba(255,255,255,.06), 1px rgba(141,202,255,.25) border, 16px radius.",
-      "The Foundation diagram (assets/diagrams/foundation-diagram.png) may replace the cards in landscape. The qualifier still appears."
+      "The Foundation diagram (assets/diagrams/foundation-diagram.png) may replace the cards in landscape."
     ]
   },
   "copy_sources": [
@@ -125,27 +125,18 @@
           "x": 96,
           "y": 1015,
           "w": 888,
-          "h": 346,
+          "h": 449,
           "kind": "option-cards",
           "optional": false
         },
         "cta": {
           "x": 96,
-          "y": 1441,
+          "y": 1544,
           "w": null,
           "h": 96,
           "font_px": 30,
           "padding_x": 40,
           "radius": 8
-        },
-        "footnote": {
-          "x": 96,
-          "y": 1577,
-          "w": 888,
-          "h": 63,
-          "font_px": 24,
-          "max_lines": 2,
-          "max_chars": 140
         }
       }
     },
@@ -199,27 +190,18 @@
           "x": 80,
           "y": 623,
           "w": 920,
-          "h": 161,
+          "h": 241,
           "kind": "option-cards",
           "optional": false
         },
         "cta": {
           "x": 80,
-          "y": 840,
+          "y": 920,
           "w": null,
           "h": 80,
           "font_px": 26,
           "padding_x": 33,
           "radius": 8
-        },
-        "footnote": {
-          "x": 80,
-          "y": 948,
-          "w": 920,
-          "h": 52,
-          "font_px": 20,
-          "max_lines": 2,
-          "max_chars": 174
         }
       }
     },
@@ -271,21 +253,12 @@
         },
         "cta": {
           "x": 64,
-          "y": 478,
+          "y": 516,
           "w": null,
           "h": 56,
           "font_px": 20,
           "padding_x": 23,
           "radius": 6
-        },
-        "footnote": {
-          "x": 64,
-          "y": 552,
-          "w": 536,
-          "h": 20,
-          "font_px": 15,
-          "max_lines": 1,
-          "max_chars": 68
         },
         "image_area": {
           "x": 640,

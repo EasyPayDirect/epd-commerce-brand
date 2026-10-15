@@ -22,13 +22,13 @@ EPD Commerce gives businesses two ways to process payments. Both run inside the 
 
 Process Now is not suited to high-volume, high-risk, regulated, or restricted businesses. Those businesses belong on Easy Pay Direct.
 
-## Required qualifiers
+## Timing and fit language
 
-Every piece of content that mentions approval timing or the volume figure must keep the qualifiers. Exact wording lives in `data/claims.json`.
+Keep the soft words that are part of each claim. Exact wording lives in `data/claims.json`.
 
-- "Often same day" and "1 to 3 days" are typical timing, not promises.
-- "Under $25K a month" is a fit recommendation, not a cutoff. Easy Pay Direct does not require $25K a month.
-- All applications are subject to review. Approval is not guaranteed.
+- Process Now: approval is **often** same day.
+- Easy Pay Direct: approval **typically** takes 1 to 3 days.
+- Process Now fits businesses **generally** under $25K a month. It is a recommendation, not a cutoff. Easy Pay Direct does not require $25K a month.
 
 ## Processing options vs payment methods
 
@@ -63,5 +63,6 @@ Partner copy should never say:
 ## Naming
 
 - Always name **Process Now** when referencing the auto-boarding option. "Near-instant approval" can describe it but never replace the name.
-- When comparing the options, call the underwritten option **Easy Pay Direct**, not "Merchant account."
+- When naming or comparing the options, call the underwritten option **Easy Pay Direct**.
+- "Merchant accounts" is fine as a contextual eyebrow or label on social graphics (see `assets/examples/story-easy-pay-direct.png`), as long as the graphic names Easy Pay Direct elsewhere.
 - Never mention banking partners by name. Say "one of our banking partners" if needed.
