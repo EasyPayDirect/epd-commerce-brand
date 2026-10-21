@@ -150,6 +150,39 @@
           "padding_x": 40,
           "radius": 8
         }
+      },
+      "logo_modes": {
+        "epd-only": {
+          "logo": {
+            "x": 96,
+            "y": 250,
+            "w": 284,
+            "h": 80
+          }
+        },
+        "co-brand": {
+          "partner_logo": {
+            "x": 96,
+            "y": 250,
+            "w": 284,
+            "h": 80
+          },
+          "divider_x": 420,
+          "logo": {
+            "x": 461,
+            "y": 250,
+            "w": 284,
+            "h": 80
+          }
+        },
+        "partner-only": {
+          "partner_logo": {
+            "x": 96,
+            "y": 250,
+            "w": 426,
+            "h": 80
+          }
+        }
       }
     },
     "square": {
@@ -221,6 +254,39 @@
           "font_px": 26,
           "padding_x": 33,
           "radius": 8
+        }
+      },
+      "logo_modes": {
+        "epd-only": {
+          "logo": {
+            "x": 80,
+            "y": 80,
+            "w": 213,
+            "h": 60
+          }
+        },
+        "co-brand": {
+          "partner_logo": {
+            "x": 80,
+            "y": 80,
+            "w": 213,
+            "h": 60
+          },
+          "divider_x": 321,
+          "logo": {
+            "x": 350,
+            "y": 80,
+            "w": 213,
+            "h": 60
+          }
+        },
+        "partner-only": {
+          "partner_logo": {
+            "x": 80,
+            "y": 80,
+            "w": 319,
+            "h": 60
+          }
         }
       }
     },
@@ -294,12 +360,46 @@
           "kind": "illustration",
           "optional": true
         }
+      },
+      "logo_modes": {
+        "epd-only": {
+          "logo": {
+            "x": 64,
+            "y": 56,
+            "w": 142,
+            "h": 40
+          }
+        },
+        "co-brand": {
+          "partner_logo": {
+            "x": 64,
+            "y": 56,
+            "w": 142,
+            "h": 40
+          },
+          "divider_x": 224,
+          "logo": {
+            "x": 243,
+            "y": 56,
+            "w": 142,
+            "h": 40
+          }
+        },
+        "partner-only": {
+          "partner_logo": {
+            "x": 64,
+            "y": 56,
+            "w": 213,
+            "h": 40
+          }
+        }
       }
     }
   },
   "co_brand": {
     "rules": [
-      "Partner logo left, 1px rgba(255,255,255,.35) vertical divider, EPD Commerce logo right.",
+      "Three logo modes: epd-only (EPD Commerce logo), co-brand (partner logo left, divider, EPD Commerce logo right), partner-only (partner logo replaces the EPD Commerce logo).",
+      "In co-brand, 1px rgba(255,255,255,.35) vertical divider between the logos.",
       "Partner logo height never exceeds the EPD Commerce logo height. Partner supplies a white or single-color version.",
       "No 'powered by' or 'official partner' language unless approved.",
       "Partner link is the only CTA destination. The EPD Commerce team helps each business choose a processing option."

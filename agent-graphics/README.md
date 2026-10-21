@@ -62,7 +62,17 @@ node render.mjs /absolute/path/to/work/recipe.json /absolute/path/to/work/graphi
 node --test render.test.mjs
 ```
 
-For story or landscape, use the corresponding example. A recipe's `family` selects the template; `format` selects the native output dimensions. A supplied partner logo is contained without stretching, and only supported co-branding slots may be used. Supply a white/single-color logo for the dark background.
+For story or landscape, use the corresponding example. A recipe's `family` selects the template; `format` selects the native output dimensions. Supply a white or single-color transparent PNG logo for the dark background. It is contained without stretching.
+
+**Logo options.** Set `logo` in the recipe to match what the user asks for:
+
+| `logo` | Result | Needs `partnerLogo` |
+|---|---|---|
+| `epd-only` | EPD Commerce logo only | No |
+| `co-brand` | Business logo, divider, EPD Commerce logo | Yes |
+| `partner-only` | Business logo replaces the EPD Commerce logo | Yes |
+
+If `logo` is omitted, the renderer uses `co-brand` when `partnerLogo` is supplied and `epd-only` otherwise. Use `partner-only` when the user asks to use only their logo or to remove the EPD Commerce logo. All three options work in both families and all formats. In `co-brand`, the business logo is never taller than the EPD Commerce logo.
 
 The recipe can retain a `referralLink` for handoff. It is not a clickable destination inside a PNG and is not automatically posted anywhere.
 
@@ -76,7 +86,7 @@ Inspect the PNG at full size and at a realistic phone preview. Check:
 - The subject is relevant and the reference style is consistent.
 - No tiny unreadable copy or unintended checkerboard/background box.
 - No misleading claims, fake UI, or unapproved partner assets.
-- Correct supplied partner logo, if requested.
+- Correct supplied partner logo and the logo option the user asked for.
 - Headline/body leave the story UI safe zones clear.
 
 Deliver the PNG, editable JSON recipe, generated illustration, and referral link/caption placement notes. Identify the template and approved message sources used. Do not post or publish.

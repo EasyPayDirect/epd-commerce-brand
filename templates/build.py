@@ -114,6 +114,10 @@ FAMILIES = {
                        "rules": ILLUSTRATION_RULES},
         "illustration": True,
         "footnote": False,
+        "co_brand": {"rules": ["Three logo modes: epd-only (EPD Commerce logo), co-brand (partner logo left, divider, EPD Commerce logo right), partner-only (partner logo replaces the EPD Commerce logo).",
+                               "In co-brand, 1px rgba(255,255,255,.35) vertical divider between the logos.",
+                               "Partner logo height never exceeds the EPD Commerce logo height. Partner supplies a white or single-color version.",
+                               "No 'powered by' or 'official partner' language unless approved."]},
         "slots_extra": {"problem": "Replaces the eyebrow: one short problem statement in DM Mono uppercase, sky accent color. Max 40 characters."},
         "copy_sources": ["messaging-kit/capabilities/", "messaging-kit/features/"],
         "example": {"eyebrow": "FAILED PAYMENTS COST YOU", "headline": "Recover failed payments automatically.",
@@ -128,7 +132,8 @@ FAMILIES = {
                        "rules": ILLUSTRATION_RULES},
         "illustration": True,
         "footnote": False,
-        "co_brand": {"rules": ["Partner logo left, 1px rgba(255,255,255,.35) vertical divider, EPD Commerce logo right.",
+        "co_brand": {"rules": ["Three logo modes: epd-only (EPD Commerce logo), co-brand (partner logo left, divider, EPD Commerce logo right), partner-only (partner logo replaces the EPD Commerce logo).",
+                               "In co-brand, 1px rgba(255,255,255,.35) vertical divider between the logos.",
                                "Partner logo height never exceeds the EPD Commerce logo height. Partner supplies a white or single-color version.",
                                "No 'powered by' or 'official partner' language unless approved.",
                                "Partner link is the only CTA destination. The EPD Commerce team helps each business choose a processing option."]},
@@ -187,13 +192,28 @@ def build(fam_key, fam, fkey, fmt):
         if has_fn: slots["footnote"] = fn
         ix = mx + colw + 40
         slots["image_area"] = {"x": ix, "y": top, "w": W - mx - ix, "h": H - top - bottom}
+    if "co_brand" in fam:
+        lh = fmt["logo_h"]
+        epd = {"x": mx, "y": top, "w": logo_w, "h": lh}
+        partner = {"x": mx, "y": top, "w": logo_w, "h": lh}
+        epd_right = {"x": mx + logo_w + 2 * gap + 1, "y": top, "w": logo_w, "h": lh}
+        divider_x = mx + logo_w + gap
+        solo = {"x": mx, "y": top, "w": int(logo_w * 1.5), "h": lh}
+        modes = {
+            "epd-only": {"logo": epd},
+            "co-brand": {"partner_logo": partner, "divider_x": divider_x, "logo": epd_right},
+            "partner-only": {"partner_logo": solo},
+        }
     # sanity: text column must end above the CTA
     assert slots["body"]["y"] + slots["body"]["h"] <= slots["cta"]["y"] - gap, (fam_key, fkey)
     if fmt["layout"] == "stack":
         assert slots["image_area"]["h"] >= 100, (fam_key, fkey, slots["image_area"]["h"])
     slots["image_area"].update({"kind": fam["image_area"]["kind"], "optional": fam["illustration"]})
     slots["cta"].update({"padding_x": int(fmt["cta_h"] * 0.42), "radius": fmt["radius"]})
-    return {"canvas": {"w": W, "h": H}, "safe_area": safe, "slots": slots}
+    out = {"canvas": {"w": W, "h": H}, "safe_area": safe, "slots": slots}
+    if "co_brand" in fam:
+        out["logo_modes"] = modes
+    return out
 
 
 def main():

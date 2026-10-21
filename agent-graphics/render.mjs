@@ -189,8 +189,17 @@ function normalizeRecipe(recipe, template, format) {
   if (recipe.motif !== undefined && typeof recipe.motif !== "boolean") {
     throw new Error("Invalid motif: use true or false.");
   }
-  if (recipe.partnerLogo && !template.formats[format].slots.partner_logo) {
-    throw new Error(`Unsupported co-branding: ${template.id} has no partner-logo slot in ${format}.`);
+  const modes = template.formats[format].logo_modes;
+  if (!modes) throw new Error(`Unsupported family for partner graphics: ${template.id} has no logo modes.`);
+  const logoMode = recipe.logo ?? (recipe.partnerLogo ? "co-brand" : "epd-only");
+  if (!modes[logoMode]) {
+    throw new Error(`Invalid logo "${logoMode}". Use one of: ${Object.keys(modes).join(", ")}.`);
+  }
+  if (logoMode !== "epd-only" && !recipe.partnerLogo) {
+    throw new Error(`Logo mode "${logoMode}" needs partnerLogo: a transparent PNG supplied by the business.`);
+  }
+  if (logoMode === "epd-only" && recipe.partnerLogo) {
+    throw new Error('partnerLogo was supplied but logo is "epd-only". Use "co-brand" or "partner-only".');
   }
   const approved = template.cta.approved_labels;
   if (!approved.includes(recipe.cta)) {
@@ -199,7 +208,7 @@ function normalizeRecipe(recipe, template, format) {
   if (!recipe.copy || typeof recipe.copy !== "object" || Array.isArray(recipe.copy)) {
     throw new Error("Invalid recipe: copy must be an object.");
   }
-  return { ...template.formats[format], format };
+  return { ...template.formats[format], format, logoMode, logoLayout: modes[logoMode] };
 }
 
 async function fitImage(bytes, box) {
@@ -275,13 +284,15 @@ export async function composeGraphic(recipe, { recipePath, illustrationPath } = 
     layers.push({ input: faded, left: canvasW - side, top: Math.max(0, canvasH - side), blend: "over" });
   }
 
-  const logoFile = LOGO_FILE;
-  const logoAsset = await readPng(logoFile, "EPD Commerce logo");
-  const logoSlot = slots.logo;
-  const logo = await fitImage(logoAsset.bytes, { ...logoSlot, w: logoSlot.w, h: logoSlot.h });
-  layers.push({ input: logo.bytes, left: logoSlot.x, top: logoSlot.y });
+  const lay = layout.logoLayout;
+  let epdLogo = null;
+  if (lay.logo) {
+    const logoAsset = await readPng(LOGO_FILE, "EPD Commerce logo");
+    epdLogo = await fitImage(logoAsset.bytes, lay.logo);
+    layers.push({ input: epdLogo.bytes, left: lay.logo.x, top: epdLogo.top });
+  }
 
-  if (recipe.partnerLogo) {
+  if (lay.partner_logo) {
     if (typeof recipe.partnerLogo !== "string") {
       throw new Error("Invalid partnerLogo path: expected a file path string.");
     }
@@ -292,17 +303,20 @@ export async function composeGraphic(recipe, { recipePath, illustrationPath } = 
       ? recipe.partnerLogo
       : path.resolve(path.dirname(recipePath), recipe.partnerLogo);
     const partner = await readPng(partnerFile, "partner logo");
-    const partnerSlot = slots.partner_logo;
-    const partnerFit = await fitImage(partner.bytes, { ...partnerSlot, w: partnerSlot.w, h: logo.height });
     if (!partner.metadata.hasAlpha) {
       const error = new Error("partner logo must be a transparent PNG");
       error.code = "alphaopaque";
       throw error;
     }
-    layers.push({ input: partnerFit.bytes, left: partnerSlot.x, top: partnerSlot.y + Math.floor((partnerSlot.h - partnerFit.height) / 2) });
-    const dividerX = logoSlot.x - Math.max(8, Math.round(partnerSlot.w * 0.12));
-    const divider = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1" height="${logo.height}"><rect width="1" height="${logo.height}" fill="#FFFFFF" fill-opacity=".35"/></svg>`);
-    layers.push({ input: divider, left: dividerX, top: logo.top });
+    const box = lay.partner_logo;
+    // In co-brand the partner logo never exceeds the EPD Commerce logo height.
+    const maxH = epdLogo ? Math.min(box.h, epdLogo.height) : box.h;
+    const partnerFit = await fitImage(partner.bytes, { ...box, h: maxH });
+    layers.push({ input: partnerFit.bytes, left: box.x, top: box.y + Math.floor((box.h - partnerFit.height) / 2) });
+    if (lay.divider_x !== undefined && epdLogo) {
+      const divider = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1" height="${epdLogo.height}"><rect width="1" height="${epdLogo.height}" fill="#FFFFFF" fill-opacity=".35"/></svg>`);
+      layers.push({ input: divider, left: lay.divider_x, top: epdLogo.top });
+    }
   }
 
   const eyebrowUnused = Math.max(0, eyebrowSlot.h - Math.ceil(eyebrow.length ? lineHeight(eyebrowSlot, eyebrowRole) * eyebrow.length : 0));
@@ -373,6 +387,7 @@ export async function composeGraphic(recipe, { recipePath, illustrationPath } = 
       format,
       dimensions: `${canvasW}x${canvasH}`,
       fonts: HAS_GENERAL_SANS ? "General Sans with DM Mono" : "DM Sans (approved fallback for General Sans) with DM Mono",
+      logo: layout.logoMode,
       referralLink: recipe.referralLink ?? null,
       reminder: "PNG graphics are not clickable. Referral links are handoff notes only; nothing is posted or sent.",
     },

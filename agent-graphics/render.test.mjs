@@ -94,9 +94,16 @@ test("rejects unsupported families, formats, CTA labels, and co-brand combinatio
   const badCta = recipe("partner-introduction", "square1080x1080");
   badCta.cta = "CONTACT US";
   await assert.rejects(composeGraphic(badCta), /Invalid CTA/);
-  const unsupportedCoBrand = recipe("problem-solution", "square1080x1080");
-  unsupportedCoBrand.partnerLogo = partnerLogo;
-  await assert.rejects(composeGraphic(unsupportedCoBrand), /Unsupported co-branding/);
+  const badMode = recipe("problem-solution", "square1080x1080");
+  badMode.logo = "partner-large";
+  await assert.rejects(composeGraphic(badMode), /Invalid logo/);
+  const missingPartner = recipe("problem-solution", "square1080x1080");
+  missingPartner.logo = "partner-only";
+  await assert.rejects(composeGraphic(missingPartner), /needs partnerLogo/);
+  const conflicting = recipe("partner-introduction", "square1080x1080");
+  conflicting.logo = "epd-only";
+  conflicting.partnerLogo = partnerLogo;
+  await assert.rejects(composeGraphic(conflicting), /epd-only/);
   const wrongFamilyProblem = recipe("partner-introduction", "square1080x1080");
   wrongFamilyProblem.copy.problem = "PAYMENTS FAIL";
   await assert.rejects(composeGraphic(wrongFamilyProblem), /only problem-solution/);
@@ -173,4 +180,22 @@ test("CLI file renderer writes PNG while preserving recipe data and optional mot
   assert.equal((await sharp(outputFile).metadata()).width, 1080);
   assert.equal(notes.referralLink, input.referralLink);
   assert.equal(await readFile(recipeFile, "utf8"), original);
+});
+
+test("supports epd-only, co-brand, and partner-only logos in both families", async () => {
+  for (const family of ["partner-introduction", "problem-solution"]) {
+    for (const format of ["story1080x1920", "square1080x1080", "landscape1200x628"]) {
+      for (const logo of ["epd-only", "co-brand", "partner-only"]) {
+        const r = recipe(family, format);
+        r.logo = logo;
+        if (logo !== "epd-only") r.partnerLogo = partnerLogo;
+        const { png, notes } = await composeGraphic(r);
+        assert.equal(notes.logo, logo);
+        assert.ok(png.length > 1000);
+      }
+    }
+  }
+  const defaulted = recipe("problem-solution", "square1080x1080");
+  defaulted.partnerLogo = partnerLogo;
+  assert.equal((await composeGraphic(defaulted)).notes.logo, "co-brand");
 });
