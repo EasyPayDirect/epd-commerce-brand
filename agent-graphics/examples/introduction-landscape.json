@@ -1,0 +1,13 @@
+{
+  "family": "partner-introduction",
+  "format": "landscape1200x628",
+  "background": "social-gradient",
+  "motif": false,
+  "copy": {
+    "eyebrow": "A PARTNER INTRODUCTION",
+    "headline": "Accept payments from humans and agents.",
+    "body": "One link. We'll help each business find the right processing option."
+  },
+  "cta": "GET STARTED",
+  "illustration": "../work/illustration.png"
+}

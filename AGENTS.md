@@ -46,3 +46,9 @@ Approved screenshots live in `assets/epd-commerce-features/<slug>/`, indexed by 
 4. Every image gets its alt text from the manifest.
 5. Maximum 1 hero and 3 body images, spread evenly, never inside the intro paragraph.
 6. Never generate synthetic screenshots.
+
+## Partner graphics (separate workflow)
+
+`agent-graphics/` is only for partners who arrive through the "Create with your own AI agent" prompt on epd.com. If that is how you were sent here, read `agent-graphics/README.md` next and follow it.
+
+Its extra restrictions (read-only access, two template families, shipped features only, partner-approved assets only) apply only to that workflow. Staff and internal tools follow this file and are not limited by them.

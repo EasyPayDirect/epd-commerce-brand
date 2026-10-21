@@ -9,7 +9,7 @@ aliases_incorrect:
   - "payment recovery"
   - "dunning"
 capability: React
-status: beta
+status: shipped
 proper_noun: true
 one_liner: "Automatically retry failed payments and rescue at-risk revenue with rule-based strategies you preset or build yourself."
 related_names:

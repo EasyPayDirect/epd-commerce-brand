@@ -1,0 +1,16 @@
+{
+  "name": "epdc-partner-agent-graphics",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.3"
+  },
+  "scripts": {
+    "render": "node render.mjs",
+    "test": "node --test render.test.mjs"
+  },
+  "dependencies": {
+    "sharp": "^0.35.3"
+  }
+}

@@ -10,6 +10,7 @@ EPD Commerce is a separate brand from Easy Pay Direct. The [Easy Pay Direct bran
 - **Names:** [data/names.json](data/names.json). **Claims:** [data/claims.json](data/claims.json).
 - **Tokens, components, and assets:** [.well-known/brand-assets.json](.well-known/brand-assets.json).
 - **Studio templates:** [templates/](templates/).
+- **Partners creating graphics with their own AI agent:** [agent-graphics/](agent-graphics/README.md).
 - **Guidelines:** [brand-guidelines/](brand-guidelines/). **Copy:** [messaging-kit/](messaging-kit/).
 
 ## Structure
@@ -21,6 +22,7 @@ data/
   claims.json                  Approved numbers, attribution, status, review dates
 .well-known/
   brand-assets.json            Tokens, components, asset library with partner-use status
+agent-graphics/                Workflow and renderer for partners' own AI agents (2 template families)
 templates/                     Studio template specs, 5 families x story, square, landscape
   build.py, preview.py         Generate specs and review previews
   previews/
