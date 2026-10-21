@@ -9,16 +9,19 @@
     "dark-gradient": {
       "story": "assets/backgrounds/dark-gradient-story.png",
       "square": "assets/backgrounds/dark-gradient-square.png",
+      "portrait": "assets/backgrounds/dark-gradient-portrait.png",
       "landscape": "assets/backgrounds/dark-gradient-landscape.png"
     },
     "dark-gradient-highlight": {
       "story": "assets/backgrounds/dark-gradient-highlight-story.png",
       "square": "assets/backgrounds/dark-gradient-highlight-square.png",
+      "portrait": "assets/backgrounds/dark-gradient-highlight-portrait.png",
       "landscape": "assets/backgrounds/dark-gradient-highlight-landscape.png"
     },
     "social-gradient": {
       "story": "assets/backgrounds/social-gradient-story.png",
       "square": "assets/backgrounds/social-gradient-square.png",
+      "portrait": "assets/backgrounds/social-gradient-portrait.png",
       "landscape": "assets/backgrounds/social-gradient-landscape.png"
     }
   },
@@ -272,6 +275,104 @@
             "y": 80,
             "w": 319,
             "h": 60
+          }
+        }
+      }
+    },
+    "portrait": {
+      "canvas": {
+        "w": 1080,
+        "h": 1350
+      },
+      "safe_area": {
+        "x": 80,
+        "y": 80,
+        "w": 920,
+        "h": 1190
+      },
+      "slots": {
+        "logo": {
+          "x": 80,
+          "y": 80,
+          "w": 227,
+          "h": 64,
+          "asset": "assets/logos/epdc-horizontal-white.png"
+        },
+        "eyebrow": {
+          "x": 80,
+          "y": 208,
+          "w": 920,
+          "h": 32,
+          "font_px": 26,
+          "max_lines": 1,
+          "max_chars": 42
+        },
+        "headline": {
+          "x": 80,
+          "y": 272,
+          "w": 920,
+          "h": 265,
+          "font_px": 84,
+          "max_lines": 3,
+          "max_chars": 59
+        },
+        "body": {
+          "x": 80,
+          "y": 569,
+          "w": 920,
+          "h": 146,
+          "font_px": 36,
+          "max_lines": 3,
+          "max_chars": 145
+        },
+        "image_area": {
+          "x": 80,
+          "y": 779,
+          "w": 920,
+          "h": 339,
+          "kind": "illustration",
+          "optional": true
+        },
+        "cta": {
+          "x": 80,
+          "y": 1182,
+          "w": null,
+          "h": 88,
+          "font_px": 28,
+          "padding_x": 36,
+          "radius": 8
+        }
+      },
+      "logo_modes": {
+        "epd-only": {
+          "logo": {
+            "x": 80,
+            "y": 80,
+            "w": 227,
+            "h": 64
+          }
+        },
+        "co-brand": {
+          "partner_logo": {
+            "x": 80,
+            "y": 80,
+            "w": 227,
+            "h": 64
+          },
+          "divider_x": 339,
+          "logo": {
+            "x": 372,
+            "y": 80,
+            "w": 227,
+            "h": 64
+          }
+        },
+        "partner-only": {
+          "partner_logo": {
+            "x": 80,
+            "y": 80,
+            "w": 340,
+            "h": 64
           }
         }
       }

@@ -31,9 +31,17 @@ Agent names do not guarantee capabilities. Check the actual enabled tools. Never
 
 Collect:
 
-1. What should the graphic promote, and who is the audience?
-2. Where will it appear? Square feed (1080×1080), story (1080×1920), or landscape/link-preview/blog-header (1200×628)?
-3. Optional: business name, supplied business logo, and partner referral link.
+1. **Who are you trying to reach with this graphic?** For example business coaches, course creators, ecommerce brands, or agencies. Do not ask the user what part of EPD Commerce to promote. Most people will not know. You choose the message.
+2. **Where will you post it?** Offer these sizes:
+   - Instagram or Facebook feed post, 4:5 portrait (1080×1350). Recommend this for feed posts.
+   - Instagram or Facebook story, or Reel cover (1080×1920)
+   - Square post (1080×1080)
+   - LinkedIn, X, link preview, or banner (1200×628)
+3. **Optional:** your business name, a logo file (transparent PNG), whether you want your logo next to ours or instead of ours, and your partner referral link.
+
+After the answers, pick the message yourself from the approved sources in step 3, based on what that audience cares about. Show the user the headline, body, and CTA you plan to use in one short message and ask if they want changes before you generate the illustration. Offer one or two alternative angles if useful (for example, accepting payments on their current site, subscriptions for recurring clients, or recovering failed payments).
+
+If the user asks for a size not listed, explain the four supported sizes and offer the closest one. Never stretch or crop a finished graphic into another size.
 
 Ask these in one short message. If the user's request already answers some, ask only for what is missing. Never infer a business logo or invent an endorsement.
 
@@ -45,7 +53,7 @@ Use only features with `status: shipped` and approved claims with their attribut
 
 ## 4. Choose a supported illustration layout
 
-The standalone renderer implements the public repo's `partner-introduction` and `problem-solution` families. Both allow AI illustrations. Use square, story, or landscape at native size. Do not stretch or crop a completed graphic to get another format.
+The standalone renderer implements the public repo's `partner-introduction` and `problem-solution` families. Both allow AI illustrations. Use portrait, story, square, or landscape at native size. Do not stretch or crop a completed graphic to get another format.
 
 The repo's other families have different image rules. Never put AI illustrations into a screenshot or payment-logo-only family. This renderer intentionally does not implement those families.
 
@@ -72,7 +80,7 @@ node render.mjs /absolute/path/to/work/recipe.json /absolute/path/to/work/graphi
 node --test render.test.mjs
 ```
 
-For story or landscape, use the corresponding example. A recipe's `family` selects the template; `format` selects the native output dimensions. Supply a white or single-color transparent PNG logo for the dark background. It is contained without stretching.
+For story or landscape, use the corresponding example. For portrait, copy any example and set `"format": "portrait1080x1350"`. A recipe's `family` selects the template; `format` selects the native output dimensions. Supply a white or single-color transparent PNG logo for the dark background. It is contained without stretching.
 
 **Logo options.** Set `logo` in the recipe to match what the user asks for:
 

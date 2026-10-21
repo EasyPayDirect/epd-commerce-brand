@@ -369,7 +369,7 @@
     },
     "backgrounds": [
       {
-        "path": "assets/backgrounds/dark-gradient-{story,square,landscape}.png",
+        "path": "assets/backgrounds/dark-gradient-{story,portrait,square,landscape}.png",
         "use": "Default dark background for templates.",
         "backgrounds": [
           "n/a"
@@ -378,7 +378,7 @@
         "partner_use": "approved"
       },
       {
-        "path": "assets/backgrounds/dark-gradient-highlight-{story,square,landscape}.png",
+        "path": "assets/backgrounds/dark-gradient-highlight-{story,portrait,square,landscape}.png",
         "use": "Dark background with soft blue highlight behind imagery.",
         "backgrounds": [
           "n/a"
@@ -387,7 +387,7 @@
         "partner_use": "approved"
       },
       {
-        "path": "assets/backgrounds/social-gradient-{story,square,landscape}.png",
+        "path": "assets/backgrounds/social-gradient-{story,portrait,square,landscape}.png",
         "use": "Social and partner graphics.",
         "backgrounds": [
           "n/a"

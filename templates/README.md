@@ -1,10 +1,11 @@
 # Studio templates
 
-Specs for the EPD Commerce design studio. Each family comes in three formats:
+Specs for the EPD Commerce design studio. Each family comes in four formats:
 
 | Format | Size | Safe area |
 |---|---|---|
 | Story | 1080 × 1920 | 96px sides, 250px top, 280px bottom (clear of platform UI) |
+| Portrait (4:5 feed) | 1080 × 1350 | 80px all sides. Uses story line counts at smaller type sizes. |
 | Square | 1080 × 1080 | 80px all sides |
 | Landscape | 1200 × 628 | 64px sides, 56px top and bottom. Text left, image right. |
 

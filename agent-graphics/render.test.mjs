@@ -90,7 +90,7 @@ test("supports transparent illustration and supported partner co-branding", asyn
 
 test("rejects unsupported families, formats, CTA labels, and co-brand combinations", async () => {
   await assert.rejects(composeGraphic({ ...recipe("not-a-template", "square1080x1080") }), /Unsupported family/);
-  await assert.rejects(composeGraphic(recipe("partner-introduction", "feed1080x1350")), /Unsupported format/);
+  await assert.rejects(composeGraphic(recipe("partner-introduction", "banner728x90")), /Unsupported format/);
   const badCta = recipe("partner-introduction", "square1080x1080");
   badCta.cta = "CONTACT US";
   await assert.rejects(composeGraphic(badCta), /Invalid CTA/);
@@ -184,7 +184,7 @@ test("CLI file renderer writes PNG while preserving recipe data and optional mot
 
 test("supports epd-only, co-brand, and partner-only logos in both families", async () => {
   for (const family of ["partner-introduction", "problem-solution"]) {
-    for (const format of ["story1080x1920", "square1080x1080", "landscape1200x628"]) {
+    for (const format of ["story1080x1920", "portrait1080x1350", "square1080x1080", "landscape1200x628"]) {
       for (const logo of ["epd-only", "co-brand", "partner-only"]) {
         const r = recipe(family, format);
         r.logo = logo;

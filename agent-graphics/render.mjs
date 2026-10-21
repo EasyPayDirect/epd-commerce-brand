@@ -37,6 +37,9 @@ const FORMAT_ALIASES = Object.freeze({
   square: "square",
   "1080x1080": "square",
   square1080x1080: "square",
+  portrait: "portrait",
+  "1080x1350": "portrait",
+  portrait1080x1350: "portrait",
   landscape: "landscape",
   "1200x628": "landscape",
   landscape1200x628: "landscape",
@@ -104,7 +107,7 @@ async function imageHasUsableAlpha(file) {
 function formatKey(recipe) {
   const raw = recipe.format ?? recipe.size;
   const key = FORMAT_ALIASES[raw];
-  if (!key) throw new Error(`Unsupported format "${raw ?? ""}". Use story1080x1920, square1080x1080, or landscape1200x628.`);
+  if (!key) throw new Error(`Unsupported format "${raw ?? ""}". Use story1080x1920, portrait1080x1350, square1080x1080, or landscape1200x628.`);
   return key;
 }
 

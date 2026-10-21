@@ -23,7 +23,7 @@ data/
 .well-known/
   brand-assets.json            Tokens, components, asset library with partner-use status
 agent-graphics/                Workflow and renderer for partners' own AI agents (2 template families)
-templates/                     Studio template specs, 5 families x story, square, landscape
+templates/                     Studio template specs, 5 families x story, portrait, square, landscape
   build.py, preview.py         Generate specs and review previews
   previews/
 brand-guidelines/

@@ -21,7 +21,7 @@ Partner use: **approved** = partners may use inside studio templates. **pending*
 | `diagrams/foundation-section.png` | Full Foundation section artwork | n/a | Use whole | approved |
 | `diagrams/foundation-section.svg` | Source vector (needs General Sans and DM Mono installed) | n/a | n/a | no |
 | `epd-commerce-features/<slug>/` | Product screenshots | Dark, white | Whole panels only, never through text or numbers | approved |
-| `backgrounds/dark-gradient-*.png` | Template backgrounds, story, square, landscape | n/a | Native size | approved |
+| `backgrounds/dark-gradient-*.png` | Template backgrounds, story, portrait, square, landscape | n/a | Native size | approved |
 | `backgrounds/dark-gradient-highlight-*.png` | Same, with soft blue highlight behind imagery | n/a | Native size | approved |
 | `backgrounds/social-gradient-*.png` | Brighter social and partner gradient with top-right glow | n/a | Native size | approved |
 | `examples/story-process-now.png` | Finished Process Now story (1080×1920). Reference and ready to post. | n/a | Use whole | approved |

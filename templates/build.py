@@ -16,6 +16,10 @@ FORMATS = {
                   "logo_h": 60, "gap": 28,
                   "type": {"eyebrow": 24, "headline": 76, "body": 34, "cta": 26, "footnote": 20},
                   "cta_h": 80, "radius": 8},
+    "portrait":  {"w": 1080, "h": 1350, "margin_x": 80, "safe_top": 80, "safe_bottom": 80, "layout": "stack",
+                  "logo_h": 64, "gap": 32,
+                  "type": {"eyebrow": 26, "headline": 84, "body": 36, "cta": 28, "footnote": 22},
+                  "cta_h": 88, "radius": 8},
     "landscape": {"w": 1200, "h": 628, "margin_x": 64, "safe_top": 56, "safe_bottom": 56, "layout": "split",
                   "logo_h": 40, "gap": 18, "text_col": 0.50,
                   "type": {"eyebrow": 18, "headline": 56, "body": 26, "cta": 20, "footnote": 15},
@@ -156,7 +160,9 @@ def build(fam_key, fam, fkey, fmt):
     W, H = fmt["w"], fmt["h"]
     mx, top, bottom, gap = fmt["margin_x"], fmt["safe_top"], fmt["safe_bottom"], fmt["gap"]
     safe = {"x": mx, "y": top, "w": W - 2 * mx, "h": H - top - bottom}
-    hl = fam["lines"]["headline"][fkey]; bl = fam["lines"]["body"][fkey]
+    # portrait (4:5 feed) uses the story line counts at its own type sizes
+    lk = "story" if fkey == "portrait" else fkey
+    hl = fam["lines"]["headline"][lk]; bl = fam["lines"]["body"][lk]
     slots = {}
     logo_w = int(fmt["logo_h"] * 3.55)
     if fam_key == "partner-introduction":

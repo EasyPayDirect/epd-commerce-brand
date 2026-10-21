@@ -9,7 +9,7 @@ Fallbacks: General Sans → DM Sans, Inter, system-ui. DM Mono → JetBrains Mon
 Measured from the live epd.com site.
 
 | Component | Font | Size / line height | Weight | Tracking | Color |
-|---|---|---|---|---|---|
+|---|---|---|---|---|
 | Hero headline | General Sans | 38 / 1.12 (34 tablet, 30 mobile) | 500 | -0.025em | White on dark |
 | Feature section headline (dark) | General Sans | 60 / 0.98 | 540 | -0.052em | White, second line `#8DCAFF` |
 | Section headline (light) | General Sans | 40 / 1.15 | 500 | -1px | `#000000` to `#0E1422` |
@@ -28,16 +28,16 @@ Eyebrows may start with a short 24px horizontal rule in the same color, as in th
 
 Sizes are in px at the template's native size. Template-specific limits are in `templates/`.
 
-| Element | Story 1080×1920 | Square 1080×1080 | Landscape 1200×628 |
-|---|---|---|---|
-| Headline (General Sans 500, -0.03em, lh 1.05) | 96 | 76 | 56 |
-| Headline max lines | 4 | 3 | 2 |
-| Subhead / body (General Sans 400, lh 1.35) | 40 | 34 | 26 |
-| Body max lines | 4 | 3 | 2 |
-| Eyebrow (DM Mono 500, 0.14em, uppercase) | 28 | 24 | 18 |
-| CTA (DM Mono 500, 0.04em, uppercase) | 30 | 26 | 20 |
-| Footnote (General Sans 400) | 24 | 20 | 15 |
-| Minimum text size anywhere | 24 | 20 | 15 |
+| Element | Story 1080×1920 | Portrait 1080×1350 | Square 1080×1080 | Landscape 1200×628 |
+|---|---|---|---|---|
+| Headline (General Sans 500, -0.03em, lh 1.05) | 96 | 84 | 76 | 56 |
+| Headline max lines | 4 | 4 | 3 | 2 |
+| Subhead / body (General Sans 400, lh 1.35) | 40 | 36 | 34 | 26 |
+| Body max lines | 4 | 4 | 3 | 2 |
+| Eyebrow (DM Mono 500, 0.14em, uppercase) | 28 | 26 | 24 | 18 |
+| CTA (DM Mono 500, 0.04em, uppercase) | 30 | 28 | 26 | 20 |
+| Footnote (General Sans 400) | 24 | 22 | 20 | 15 |
+| Minimum text size anywhere | 24 | 22 | 20 | 15 |
 
 ## Rules
 
