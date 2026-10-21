@@ -4,6 +4,16 @@
 
 Read the repository's root `AGENTS.md` first for names, claims, and brand rules. This workflow adds partner-specific steps and restrictions on top; it never loosens the brand rules.
 
+## Start here
+
+If you were given only this file's link, everything you need is in the public repository:
+
+- Repository: https://github.com/EasyPayDirect/epd-commerce-brand
+- Raw files: `https://raw.githubusercontent.com/EasyPayDirect/epd-commerce-brand/main/<path>`, for example [AGENTS.md](https://raw.githubusercontent.com/EasyPayDirect/epd-commerce-brand/main/AGENTS.md)
+- To render, clone or download the repository into your own working directory: `git clone https://github.com/EasyPayDirect/epd-commerce-brand.git`. No token or account is needed.
+
+Then follow the steps below in order. Do not skip the questions in step 2; ask them before you generate anything.
+
 ## 1. Capability check, before asking for a brief
 
 You must be able to:
@@ -25,7 +35,7 @@ Collect:
 2. Where will it appear? Square feed (1080×1080), story (1080×1920), or landscape/link-preview/blog-header (1200×628)?
 3. Optional: business name, supplied business logo, and partner referral link.
 
-Ask follow-up questions only for missing material. Never infer a business logo or invent an endorsement.
+Ask these in one short message. If the user's request already answers some, ask only for what is missing. Never infer a business logo or invent an endorsement.
 
 ## 3. Verify messaging and permissions
 
