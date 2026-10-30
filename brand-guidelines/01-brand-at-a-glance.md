@@ -44,4 +44,4 @@ Never write "EPD" alone to mean Easy Pay Direct. "EPD" only appears as part of "
 
 ## Trust anchors
 
-Easy Pay Direct track record, always attributed to Easy Pay Direct: 12+ years processing, Billions processed, 100k+ businesses helped, $48M+ revenue recovered. Full records and status in `data/claims.json`.
+Easy Pay Direct track record, always attributed to Easy Pay Direct: 13+ years processing, Billions processed, 100k+ businesses helped, $48M+ revenue recovered. Full records and status in `data/claims.json`.

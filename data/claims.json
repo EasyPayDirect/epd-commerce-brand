@@ -1,6 +1,6 @@
 {
   "_about": "Every reusable number or factual claim, with who it belongs to, who approved it, and when it was last reviewed. Only claims with status 'approved' may appear in generated copy or graphics. Repeating a number on the website does not make it approved. If a claim you want is not here, do not use it.",
-  "updated": "2026-10-15",
+  "updated": "2026-10-30",
   "status_values": {
     "approved": "Use as written. Keep the attribution.",
     "pending": "Do not use until approved.",
@@ -10,15 +10,15 @@
   "claims": [
     {
       "id": "epd-years-processing",
-      "display": "12+ years processing",
-      "short": "12+",
+      "display": "13+ years processing",
+      "short": "13+",
       "label": "years processing",
       "attribution": "Easy Pay Direct",
       "status": "approved",
       "source": "Easy Pay Direct company history. Confirmed by Head of Marketing.",
       "approved_by": "Vince Bitetti, Head of Marketing",
-      "last_reviewed": "2026-10-15",
-      "notes": "Replaces '10+ years', 'more than a decade', and '18 years'. Update the site where those appear."
+      "last_reviewed": "2026-10-30",
+      "notes": "Updated from 12+ to 13+ on 2026-10-30. Replaces '12+ years', '10+ years', 'more than a decade', and '18 years'. Update the site where those appear."
     },
     {
       "id": "epd-volume-processed",
@@ -63,18 +63,25 @@
       "notes": "Replaced by 'Billions processed'. Still appears on the epd.com homepage stats band."
     },
     {
+      "id": "epd-years-12",
+      "display": "12+ years",
+      "attribution": "Easy Pay Direct",
+      "status": "retired",
+      "notes": "Replaced by 13+ years on 2026-10-30."
+    },
+    {
       "id": "epd-years-18",
       "display": "18 years",
       "attribution": "Easy Pay Direct",
       "status": "retired",
-      "notes": "Conflicts with the approved 12+ years. Still appears in the epd.com homepage FAQ."
+      "notes": "Conflicts with the approved 13+ years. Still appears in the epd.com homepage FAQ."
     },
     {
       "id": "epd-years-10",
       "display": "10+ years / more than a decade",
       "attribution": "Easy Pay Direct",
       "status": "retired",
-      "notes": "Replaced by 12+ years. Still appears on the epd.com About page."
+      "notes": "Replaced by 13+ years. Still appears on the epd.com About page."
     },
     {
       "id": "epdc-launch-recovery-templates",

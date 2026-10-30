@@ -24,7 +24,7 @@ Use sparingly and only where it fits the audience.
 - Ground claims in specifics, using only approved claims from `data/claims.json`.
 - Keep the soft words in timing and fit claims: "often same day," "typically 1 to 3 days," "generally under $25K."
 - Use commas, periods, or parentheses for pauses.
-- Write numbers as numerals: 12+, $25K, 1 to 3 days.
+- Write numbers as numerals: 13+, $25K, 1 to 3 days.
 
 ## Don't
 
