@@ -12,6 +12,7 @@ EPD Commerce is a separate brand from Easy Pay Direct. The [Easy Pay Direct bran
 - **Studio templates:** [templates/](templates/).
 - **Partners creating graphics with their own AI agent:** [agent-graphics/](agent-graphics/README.md).
 - **Guidelines:** [brand-guidelines/](brand-guidelines/). **Copy:** [messaging-kit/](messaging-kit/).
+- **Guidelines PDF (for people):** [docs/epd-commerce-brand-guidelines.pdf](docs/epd-commerce-brand-guidelines.pdf). Generated from this repo. After changing any guideline, name, claim, or asset, rebuild it with `python3 scripts/build_guidelines_pdf.py --fonts <folder with GeneralSans-*.ttf>`.
 
 ## Structure
 
@@ -26,6 +27,10 @@ agent-graphics/                Workflow and renderer for partners' own AI agents
 templates/                     Studio template specs, 5 families x story, portrait, square, landscape
   build.py, preview.py         Generate specs and review previews
   previews/
+docs/
+  epd-commerce-brand-guidelines.pdf   Human PDF, generated from this repo
+scripts/
+  build_guidelines_pdf.py      Rebuilds the PDF
 brand-guidelines/
   01-brand-at-a-glance.md      Messaging hierarchy and lines
   02-logo-system.md
