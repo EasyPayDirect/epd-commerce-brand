@@ -26,7 +26,7 @@ Process Now is not suited to high-volume, high-risk, regulated, or restricted bu
 
 Keep the soft words that are part of each claim. Exact wording lives in `data/claims.json`.
 
-- Process Now: approval is **often** same day.
+- Process Now: approval is **often** same day. The longer form "same day, **often** within an hour" is also approved.
 - Easy Pay Direct: approval **typically** takes 1 to 3 days.
 - Process Now fits businesses **generally** under $25K a month. It is a recommendation, not a cutoff. Easy Pay Direct does not require $25K a month.
 

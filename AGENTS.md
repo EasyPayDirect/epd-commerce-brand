@@ -13,7 +13,7 @@ Read this first. It points to the files that hold the rules. If two files disagr
 
 ## Rules that never change
 
-1. **Two brands.** EPD Commerce is the platform. Easy Pay Direct is the processor. Never write "EPD" alone to mean Easy Pay Direct.
+1. **Two brands, one team.** EPD Commerce is the platform. Easy Pay Direct is the processor. "EPD" on its own is the umbrella for both (for example "the EPD ecosystem"). Never use "EPD" as shorthand when you specifically mean Easy Pay Direct.
 2. **Lead with payments.** Accept payments, then the two processing options, then the tools. AI-first lines are for AI-focused audiences only.
 3. **Exact names only.** Use `data/names.json` and the names in the product UI. The Professor, never The Data Professor.
 4. **Approved claims only.** If a number is not approved in `data/claims.json`, do not use it. Keep its attribution.

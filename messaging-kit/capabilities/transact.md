@@ -1,6 +1,6 @@
 ---
 capability: Transact
-order: 1
+order: 4
 promise: "Payments first: the right merchant account and the ways buyers want to pay"
 status: approved
 last_reviewed: 2026-10-15

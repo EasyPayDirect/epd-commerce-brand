@@ -14,7 +14,7 @@ Lead with payments. Build up from there. Every piece of content follows this ord
 
 1. **Accept payments.** Take payments on your existing website, connected carts, checkouts, and payment links. Buyers pay how they want.
 2. **Two processing options.** Process Now for a fast start, or Easy Pay Direct for full underwriting and white-glove service. Same platform. Same dashboard. Same catalog. See `messaging-kit/payment-options.md`.
-3. **Tools built on top.** Revenue Recovery, The Professor, AI Product Landing Pages, Custom Fields, and the rest, organized by capability: Transact, React, Analyze, Create. See `messaging-kit/capabilities/`.
+3. **Tools built on top.** Revenue Recovery, The Professor, AI Product Landing Pages, Custom Fields, and the rest, organized by capability: Create, Analyze, React, Transact. See `messaging-kit/capabilities/`.
 
 AI and agentic commerce are part of level 3, not the headline, unless the audience is specifically AI-focused.
 
@@ -40,7 +40,7 @@ EPD Commerce and Easy Pay Direct are separate brands.
 - **EPD Commerce** is the commerce platform.
 - **Easy Pay Direct** is the payment processor behind it, and also the name of the fully underwritten processing option.
 
-Never write "EPD" alone to mean Easy Pay Direct. "EPD" only appears as part of "EPD Commerce."
+The same team runs both, and "EPD" on its own is the umbrella for both brands, for example "the EPD ecosystem" or "the EPD team." Never use "EPD" as shorthand when you specifically mean Easy Pay Direct, the processor or the processing option.
 
 ## Trust anchors
 

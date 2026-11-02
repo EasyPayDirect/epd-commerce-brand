@@ -28,7 +28,7 @@ Use present tense only after the release is confirmed. A target date or release 
 ## What each feature file contains
 
 - `canonical_spelling` and `aliases_incorrect`
-- `capability` (Transact, React, Analyze, or Create)
+- `capability` (Create, Analyze, React, or Transact)
 - `status` (see above)
 - `one_liner`
 - `images` (approved screenshots, if any)

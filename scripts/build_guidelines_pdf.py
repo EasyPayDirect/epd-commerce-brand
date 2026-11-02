@@ -478,7 +478,10 @@ def load():
         meta["slug"] = p.stem
         feats.append(meta)
     caps = []
-    for p in sorted((ROOT / "messaging-kit" / "capabilities").glob("0*.md")):
+    for p in sorted((ROOT / "messaging-kit" / "capabilities").glob("*.md"),
+                    key=lambda p: int(re.search(r"^order:\s*(\d+)", p.read_text(), re.M).group(1)) if p.stem != "README" else 99):
+        if p.stem == "README":
+            continue
         txt = p.read_text(); fm = txt.split("---")[1]
         name = re.search(r"^capability:\s*(.+)$", fm, re.M).group(1).strip()
         prom = re.search(r"^promise:\s*\"(.+)\"", fm, re.M).group(1)
@@ -497,7 +500,7 @@ def build(story, g, names, claims, feats, caps, po):
     story.append(Spacer(1, 10))
     toc = [("01", "Brand at a glance", "What EPD Commerce is, the messaging hierarchy, lines, trust anchors"),
            ("02", "Logo system", "Lockups, files, clearspace, misuse"),
-           ("03", "Capabilities", "Transact, React, Analyze, Create"),
+           ("03", "Capabilities", "Create, Analyze, React, Transact"),
            ("04", "Processing options", "Process Now, Easy Pay Direct, payment methods"),
            ("05", "Color and buttons", "Surfaces, dark panels, gradients, buttons, shadows"),
            ("06", "Typography", "Website components and social graphic sizes"),
@@ -665,9 +668,9 @@ def build(story, g, names, claims, feats, caps, po):
 
     # ================================================= 03 CAPABILITIES
     s = g["03"]
-    divider(story, "03", "Capabilities.", "Four names, always in the same order, always with their promise. Payments come first.")
+    divider(story, "03", "Capabilities.", "Four names, always with their promise. CART is the default order.")
     story.append(Paragraph("CAPABILITIES", S["eyebrow"]))
-    story.append(Paragraph("Transact, React, Analyze, Create.", S["h1"]))
+    story.append(Paragraph("Create, Analyze, React, Transact.", S["h1"]))
     story.append(Paragraph(inline(s[""][0][1]), S["lede"]))
     cards = []
     cw2 = (CW - 10) / 2
@@ -875,10 +878,10 @@ def build(story, g, names, claims, feats, caps, po):
         for b in names[grp]:
             if b.get("never"):
                 rows.append([b["canonical"], ", ".join(b["never"])])
-    story.append(table(rows, widths=[1.8, 4.7], font=7.8))
+    story.append(table(rows, widths=[1.8, 4.7], font=7.3))
     story.append(Paragraph("Approved terms", S["h2"]))
     rows = [["Term", "Scope", "Meaning"]] + [[t["canonical"], t.get("scope", ""), t.get("meaning", "")] for t in names["approved_terms"]]
-    story.append(table(rows, widths=[1.5, 1.3, 3.7], font=7.8))
+    story.append(table(rows, widths=[1.5, 1.3, 3.7], font=7.3))
     story.append(Paragraph(inline("Never name banking partners. Say \u201cone of our banking partners.\u201d"), S["small"]))
 
     # ================================================= 08 FEATURES

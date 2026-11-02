@@ -1,6 +1,6 @@
 ---
 capability: Create
-order: 4
+order: 1
 promise: "Products, subscriptions, and AI-optimized pages"
 status: approved
 last_reviewed: 2026-10-15

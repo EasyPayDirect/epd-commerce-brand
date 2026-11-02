@@ -1,6 +1,6 @@
 ---
 capability: React
-order: 2
+order: 3
 promise: "Protect the revenue you already earned"
 status: approved
 last_reviewed: 2026-10-15

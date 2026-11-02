@@ -68,7 +68,7 @@ FAMILIES = {
                                  "Partner use pending official brand-owner marks. See assets/payment-methods/SOURCES.md."]},
         "illustration": False,
         "footnote": False,
-        "copy_sources": ["messaging-kit/capabilities/01-transact.md", "messaging-kit/payment-options.md"],
+        "copy_sources": ["messaging-kit/capabilities/transact.md", "messaging-kit/payment-options.md"],
         "example": {"eyebrow": "ACCEPT PAYMENTS", "headline": "Take payments on the website you already have.",
                     "body": "Cards, Apple Pay, Google Pay, PayPal, Venmo, ACH, and buy now, pay later.", "cta": "GET ACCESS"},
     },

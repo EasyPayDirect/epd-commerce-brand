@@ -1,6 +1,6 @@
 {
   "_about": "The single authoritative list of names for EPD Commerce. Every other file in this repo points here instead of repeating definitions. If a name is not in this file, do not invent one. Use 'canonical' exactly as written, including capitalization. Replace anything in 'never' with 'canonical'.",
-  "updated": "2026-10-15",
+  "updated": "2026-11-02",
   "brands": [
     {
       "canonical": "EPD Commerce",
@@ -9,7 +9,6 @@
         "EPD commerce",
         "Epd Commerce",
         "EPDC (in customer-facing copy)",
-        "EPD (alone)",
         "epd-commerce"
       ],
       "notes": "EPDC is acceptable only in tight UI labels or metadata. EPD Commerce is a DBA of Easy Pay Direct LLC."
@@ -72,27 +71,33 @@
       "scope": "both brands",
       "meaning": "Installment payment methods at the cart.",
       "notes": "Spell out on first use. BNPL is acceptable after that or in tight labels."
+    },
+    {
+      "canonical": "EPD",
+      "scope": "umbrella",
+      "meaning": "The team and ecosystem behind both EPD Commerce and Easy Pay Direct, for example 'the EPD ecosystem' or 'the EPD team'.",
+      "notes": "Never use EPD as shorthand when you specifically mean Easy Pay Direct, the processor or the processing option. Decision 2026-11-02."
     }
   ],
   "capabilities": [
     {
-      "canonical": "Transact",
+      "canonical": "Create",
       "order": 1
     },
     {
-      "canonical": "React",
+      "canonical": "Analyze",
       "order": 2
     },
     {
-      "canonical": "Analyze",
+      "canonical": "React",
       "order": 3
     },
     {
-      "canonical": "Create",
+      "canonical": "Transact",
       "order": 4
     }
   ],
-  "capabilities_rule": "Approved only with an explanation next to them. Never show a capability name on its own as a label or eyebrow without the one-line promise and supporting copy from messaging-kit/capabilities/. Order is always Transact, React, Analyze, Create (payments first).",
+  "capabilities_rule": "Approved only with an explanation next to them. Never show a capability name on its own as a label or eyebrow without the one-line promise and supporting copy from messaging-kit/capabilities/. Default order is CART (Create, Analyze, React, Transact). The order can change to fit the content.",
   "features": [
     {
       "canonical": "The Professor",
@@ -117,7 +122,7 @@
       "never": [
         "revenue recovery (mid-sentence)",
         "payment recovery",
-        "dunning (in customer-facing copy)"
+        "dunning (as a name for Revenue Recovery)"
       ]
     },
     {

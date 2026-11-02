@@ -1,6 +1,6 @@
 ---
 capability: Analyze
-order: 3
+order: 2
 promise: "Chat with your data. Let The Professor take action."
 status: approved
 last_reviewed: 2026-10-15

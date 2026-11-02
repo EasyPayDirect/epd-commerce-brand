@@ -59,7 +59,7 @@
     ]
   },
   "copy_sources": [
-    "messaging-kit/capabilities/01-transact.md",
+    "messaging-kit/capabilities/transact.md",
     "messaging-kit/payment-options.md"
   ],
   "ai": {

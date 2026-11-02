@@ -41,7 +41,7 @@ brand-guidelines/
   07-how-to-talk-about-features.md   Naming and release status
 messaging-kit/
   payment-options.md           Process Now and Easy Pay Direct
-  capabilities/                Transact, React, Analyze, Create
+  capabilities/                Create, Analyze, React, Transact (CART)
   features/                    One file per named feature
 assets/
   README.md                    Usage, backgrounds, cropping, partner use for every asset

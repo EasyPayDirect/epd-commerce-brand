@@ -1,6 +1,6 @@
 {
   "_about": "Every reusable number or factual claim, with who it belongs to, who approved it, and when it was last reviewed. Only claims with status 'approved' may appear in generated copy or graphics. Repeating a number on the website does not make it approved. If a claim you want is not here, do not use it.",
-  "updated": "2026-10-30",
+  "updated": "2026-11-02",
   "status_values": {
     "approved": "Use as written. Keep the attribution.",
     "pending": "Do not use until approved.",
@@ -120,6 +120,16 @@
       "approved_by": "Vince Bitetti, Head of Marketing",
       "last_reviewed": "2026-10-15",
       "notes": "Keep 'often'. The site also says 'often within an hour'."
+    },
+    {
+      "id": "process-now-approval-hour",
+      "display": "Same day, often within an hour",
+      "attribution": "Process Now",
+      "status": "approved",
+      "source": "epd.com Payment Options page, confirmed by Head of Marketing.",
+      "last_reviewed": "2026-11-02",
+      "notes": "Approved 2026-11-02. Used on the epd.com Payment Options page. Keep 'often'.",
+      "short": "Often within an hour"
     },
     {
       "id": "epd-approval-time",
