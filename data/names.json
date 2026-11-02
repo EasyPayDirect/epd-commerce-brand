@@ -31,10 +31,9 @@
       "never": [
         "ProcessNow",
         "Process-Now",
-        "Near-instant approval rail (as a name)",
         "the starter rail"
       ],
-      "notes": "Always name it 'Process Now' when the option is referenced. Descriptions like 'near-instant approval' may follow the name, not replace it."
+      "notes": "Descriptions like 'near-instant approval rail' are fine with or without the name."
     },
     {
       "canonical": "Easy Pay Direct",

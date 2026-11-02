@@ -62,7 +62,7 @@ Partner copy should never say:
 
 ## Naming
 
-- Always name **Process Now** when referencing the auto-boarding option. "Near-instant approval" can describe it but never replace the name.
+- The auto-boarding option is named **Process Now**. Descriptions like "near-instant approval rail" are also fine on their own.
 - When naming or comparing the options, call the underwritten option **Easy Pay Direct**.
 - "Merchant accounts" is fine as a contextual eyebrow or label on social graphics (see `assets/examples/story-easy-pay-direct.png`), as long as the graphic names Easy Pay Direct elsewhere.
 - Never mention banking partners by name. Say "one of our banking partners" if needed.
